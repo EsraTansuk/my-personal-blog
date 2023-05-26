@@ -6,8 +6,8 @@ interface TabProps extends PropsWithChildren {
 }
 
 export const Tab: React.FC<TabProps> = ({ children, title }) => {
-  return <div>
+  return <>
     {children}
-    </div>
+    </>
 }
 

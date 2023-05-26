@@ -57,6 +57,7 @@ export const Header = () => {
 
       <Tabs>
         <Tab title={faHouse}>
+        <div className="color-block d-none d-lg-block bg-mainColor"></div>
           <p className="w-full">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
             eaque assumenda, vero veritatis praesentium consectetur ab? Sint

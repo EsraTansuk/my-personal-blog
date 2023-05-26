@@ -10,7 +10,7 @@ export const Tabs: React.FC<Props> = ({ children }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
-    <div>
+    <>
       <ul className="text-3xl text-white flex flex-col m-0 p-0">
         {children.map((item, index) => (
           <TabTitle
@@ -22,6 +22,6 @@ export const Tabs: React.FC<Props> = ({ children }) => {
         ))}
       </ul>
       {children[selectedTab]}
-    </div>
+    </>
   );
 };
