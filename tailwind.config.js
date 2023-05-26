@@ -17,7 +17,8 @@ module.exports = {
       },
       colors: {
         bodyDarkColor: '#111',
-        mainColor:'#ffb400'
+        mainColor:'#ffb400',
+        iconBgColor: '#2b2a2a',
       },
 
     },

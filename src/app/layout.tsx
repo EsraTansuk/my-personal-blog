@@ -1,4 +1,5 @@
-import '../../styles/global.css'
+import "../../styles/global.css";
+import { Header } from "./components/header";
 
 export default function RootLayout({
   children,
@@ -8,9 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-body bg-bodyDarkColor">
-        <div className="color-block d-none d-lg-block bg-mainColor">
-
-        </div>
+        <Header />
         <main>{children}</main>
       </body>
     </html>
