@@ -11,7 +11,7 @@ type Props = {
 export const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }) => {
   return (
     <>
-      <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 hover:bg-mainColor focus-within:bg-mainColor">
+      <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative mx-3 lg:my-3 px-4 py-3 hover:bg-mainColor focus-within:bg-mainColor">
         <button onClick={() => setSelectedTab(index)}>
           <FontAwesomeIcon icon={title} style={{ width: "24px" }} />
         </button>

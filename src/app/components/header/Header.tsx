@@ -20,45 +20,13 @@ export const Header = () => {
     setOpenPages(false);
   };
   return (
-    <div className="ml-96 text-white">
-      {/* <ul className="text-3xl text-white flex flex-col m-0 p-0">
-        <li
-          className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 hover:bg-mainColor focus-within:bg-mainColor"
-          onClick={openPages}
-        >
-          <Link href="/" className="text-white">
-            <FontAwesomeIcon icon={faHouse} style={{ width: "24px" }} />
-          </Link>
-        </li>
-        <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 focus-within:bg-mainColor">
-          <Link href="/" className="text-white">
-            <FontAwesomeIcon icon={faUser} style={{ width: "22px" }} />
-          </Link>
-        </li>
-        <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 focus-within:bg-mainColor">
-          <Link href="/" className="text-white">
-            <FontAwesomeIcon icon={faBriefcase} style={{ width: "24px" }} />
-          </Link>
-        </li>
-        <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 focus-within:bg-mainColor">
-          <Link href="/" className="text-white">
-            <FontAwesomeIcon
-              icon={faEnvelopeOpenText}
-              style={{ width: "24px" }}
-            />
-          </Link>
-        </li>
-        <li className=" w-14 h-14 rounded-full bg-iconBgColor cursor-pointer relative my-3 px-4 py-3 focus-within:bg-mainColor">
-          <Link href="/" className="text-white">
-            <FontAwesomeIcon icon={faComments} style={{ width: "26px" }} />
-          </Link>
-        </li>
-      </ul> */}
+    <div className=" text-white w-full flex flex-col lg:flex-row h-screen ">
+      
 
       <Tabs>
         <Tab title={faHouse}>
         <div className="color-block d-none d-lg-block bg-mainColor"></div>
-          <p className="w-full">
+          <p className="w-full z-10">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
             eaque assumenda, vero veritatis praesentium consectetur ab? Sint
             molestias delectus suscipit dolores, sequi necessitatibus magni,
@@ -66,6 +34,9 @@ export const Header = () => {
           </p>
         </Tab>
         <Tab title={faUser}>Strawberry is red</Tab>
+        <Tab title={faBriefcase}>Strawberry is red</Tab>
+        <Tab title={faEnvelopeOpenText}>Strawberry is red</Tab>
+        <Tab title={faComments}>Strawberry is red</Tab>
       </Tabs>
     </div>
   );
