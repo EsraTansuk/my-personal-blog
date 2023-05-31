@@ -1,27 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderRadius: {
+      'none': '0',
+      'sm': '0.125rem',
+      DEFAULT: '0.25rem',
+      DEFAULT: '4px',
+      'md': '0.375rem',
+      'lg': '0.5rem',
+      'full': '9999px',
+      'large': '12px',
+      '3xl': '30px',
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "img1": "url('/img/img-1.jpg')",
       },
       fontFamily: {
-        body: ['Poppins', 'sans-serif'],
+        body: ["Poppins", "sans-serif"],
       },
       colors: {
-        bodyDarkColor: '#111',
-        mainColor:'#ffb400',
-        iconBgColor: '#2b2a2a',
+        bodyDarkColor: "#111",
+        mainColor: "#ffb400",
+        iconBgColor: "#2b2a2a",
+        shadow: '0 0 7px rgba(0,0,0,.9)',
       },
 
     },
   },
   plugins: [],
-}
+};
