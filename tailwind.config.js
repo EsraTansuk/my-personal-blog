@@ -18,6 +18,10 @@ module.exports = {
       '3xl': '30px',
     },
     extend: {
+      lineHeight: {
+        '12': '4rem',
+      },
+
       backgroundImage: {
         "img1": "url('/img/img-1.jpg')",
       },
