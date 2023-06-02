@@ -12,7 +12,7 @@ export const Tabs: React.FC<Props> = ({ children }) => {
   return (
     <>
     {children[selectedTab]}
-      <ul className="text-3xl w-full text-white flex flex-row lg:flex-col lg:w-20 justify-center mx-6">
+      <ul className="text-3xl w-full text-white flex flex-row lg:flex-col lg:w-20 justify-center mx-6 h-full fixed right-0 z-10">
         {children.map((item, index) => (
           <TabTitle
             key={index}

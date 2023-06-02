@@ -30,7 +30,7 @@ export const Header = () => {
                   boxShadow: "box-shadow: 0 0 7px rgba(0,0,0,.9)",
                 }}
               ></div>
-              <div className=" max-w-2xl items-center mx-[300px]">
+              <div className="w-2/3 items-center px-28">
                 <h1 className="text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
                   I'm Esra Tansuk. <span className=" text-white my-4">Frontend Developer</span>
                 </h1>
