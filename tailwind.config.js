@@ -18,6 +18,10 @@ module.exports = {
       '3xl': '30px',
     },
     extend: {
+      height: {
+        'calc-vh': 'calc(100vh - 80px)',
+      },
+      
       lineHeight: {
         '12': '4rem',
       },
@@ -33,6 +37,7 @@ module.exports = {
         mainColor: "#ffb400",
         iconBgColor: "#2b2a2a",
         shadow: '0 0 7px rgba(0,0,0,.9)',
+        greyBg: '#323232'
       },
 
     },
