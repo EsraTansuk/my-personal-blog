@@ -30,8 +30,8 @@ export const Header = () => {
                   boxShadow: "box-shadow: 0 0 7px rgba(0,0,0,.9)",
                 }}
               ></div>
-              <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left px:2 lg:px-20 2xl:px-48 mb-10">
-                <h1 className=" text-5xl lg:text-5xl xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
+              <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left md:px-12 lg:px-20 2xl:px-48 mb-10">
+                <h1 className=" text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
                   I'm Esra Tansuk. <br />{" "}
                   <span className=" text-white my-4">Frontend Developer</span>
                 </h1>
