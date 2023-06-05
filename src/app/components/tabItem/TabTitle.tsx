@@ -4,16 +4,17 @@ import React, { useState } from "react";
 import classNames from "classnames";
 
 type Props = {
-  title: IconDefinition;
+  title: string;
+  icon: IconDefinition;
   index: number;
   setSelectedTab: (index: number) => void;
 };
 
-export const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }) => {
+export const TabTitle: React.FC<Props> = ({ icon, setSelectedTab, index, title }) => {
   const [displayShowMore, setDisplayShowMore] = useState(false);
   
   const showMoreClass = classNames(
-    " hidden md:flex absolute top-0 -right-4 rounded-3xl -z-10 bg-mainColor pr-16 pl-7 h-14 flex items-center opacity-0 text-2xl transition-transform",
+    " hidden md:flex absolute top-0 -right-4 rounded-3xl -z-10 bg-mainColor pr-16 pl-7 h-14 flex items-center opacity-0 text-lg font-bold transition-transform",
     {
       "-translate-x-4 duration-300 opacity-100": displayShowMore,
     },
@@ -30,9 +31,9 @@ export const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }) => {
         onMouseOut={() => setDisplayShowMore(false)}
       >
         <button onClick={() => setSelectedTab(index)}>
-          <FontAwesomeIcon icon={title} style={{ width: "24px" }} />
+          <FontAwesomeIcon icon={icon} style={{ width: "24px" }} />
           <h2 className={showMoreClass}>
-            Home
+            {title}
           </h2>
         </button>
       </li>

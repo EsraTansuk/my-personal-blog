@@ -13,10 +13,11 @@ import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
 
 export const Header = () => {
+
   return (
     <div className=" text-white w-full flex flex-col lg:flex-row h-screen ">
       <Tabs>
-        <Tab title={faHouse}>
+        <Tab icon={faHouse} title="HOME">
           <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
           <div className="z-10 px-10 py-10 align-middle w-full">
             <div className="flex flex-col lg:flex-row w-full items-center">
@@ -54,7 +55,7 @@ export const Header = () => {
             </div>
           </div>
         </Tab>
-        <Tab title={faUser}>
+        <Tab icon={faUser} title="ABOUT">
           <div className=" flex justify-center mt-14 me-20">
             <div className="w-full xl:w-3/4 mx-12 md:mx-6 xl:mx-9 flex flex-col lg:flex-row">
               <div className="">
@@ -72,9 +73,9 @@ export const Header = () => {
             </div>
           </div>
         </Tab>
-        <Tab title={faBriefcase}>Strawberry is red</Tab>
-        <Tab title={faEnvelopeOpenText}>Strawberry is red</Tab>
-        <Tab title={faComments}>Strawberry is red</Tab>
+        <Tab icon={faBriefcase} title="PORTFOLIO">Strawberry is red</Tab>
+        <Tab icon={faEnvelopeOpenText} title="CONTACT">Strawberry is red</Tab>
+        <Tab icon={faComments} title="BLOG">Strawberry is red</Tab>
       </Tabs>
     </div>
   );
