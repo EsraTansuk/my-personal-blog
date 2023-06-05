@@ -4,8 +4,7 @@ import { Tabs } from "../tabItem";
 
 export const HomePage = () => {
   return (
-    <div className=" text-3xl text-white w-full">
-      
+    <div className="text-3xl text-white w-full">
       <Header/>
     </div>
   );
