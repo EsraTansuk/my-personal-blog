@@ -27,7 +27,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        "img1": "url('/img/img-1.jpg')",
+        "img1": "url('/images/my-photo.jpeg')",
       },
       fontFamily: {
         body: ["Poppins", "sans-serif"],
@@ -39,6 +39,7 @@ module.exports = {
         shadow: '0 0 7px rgba(0,0,0,.9)',
         greyBg: '#323232',
         transparentGray: 'hsl(0, 0%, 100%, 0.07)',
+        borderColor: '#252525'
       },
 
     },

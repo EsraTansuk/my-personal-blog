@@ -13,7 +13,6 @@ import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
 
 export const Header = () => {
-
   return (
     <div className=" text-white w-full flex h-screen ">
       <Tabs>
@@ -22,12 +21,11 @@ export const Header = () => {
           <div className="z-10 px-10 py-10 align-middle w-full">
             <div className="flex flex-col lg:flex-row w-full items-center">
               <div
-                className="items-center w-72 h-72 border-4 border-greyBg lg:border-none lg:w-2/6 lg:h-calc-vh bg-[url('/img/img-1.jpg')] rounded-full lg:rounded-3xl"
+                className="items-center w-72 h-72 border-4 border-greyBg lg:border-none lg:w-2/6 lg:h-calc-vh bg-[url('/img/my-photo.jpeg')] rounded-full lg:rounded-3xl"
                 style={{
                   backgroundSize: "cover",
                   backgroundPosition: "top",
                   backgroundRepeat: "no-repeat",
-                  // height: "calc(100vh - 80px)",
                   boxShadow: "box-shadow: 0 0 7px rgba(0,0,0,.9)",
                 }}
               ></div>
@@ -56,30 +54,135 @@ export const Header = () => {
           </div>
         </Tab>
         <Tab icon={faUser} title="ABOUT">
-          <div className=" flex flex-col items-center">
+          <div className="flex flex-col items-center w-full">
             <div className="w-full text-center relative py-20 ">
-              <h1 className="font-black text-6xl m-0">ABOUT <span className=" text-mainColor">ME</span></h1>
-              <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">RESUME</span>
+              <h1 className="font-black text-6xl m-0">
+                ABOUT <span className=" text-mainColor">ME</span>
+              </h1>
+              <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
+                RESUME
+              </span>
             </div>
-            <div className="w-full xl:w-3/4 mx-12 md:mx-6 xl:mx-9 flex flex-col lg:flex-row">
-              <div className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                natus, esse quam sunt quod omnis iste rerum facilis tempora
-                animi ducimus, porro velit rem laudantium, magnam voluptate
-                nihil unde! Quod.
+            <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-5">
+              <div className="flex flex-col items-start w-full xl:w-1/2 xl:mx-0 ps-3">
+                <div className="">
+                  <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
+                    PERSONAL INFOS
+                  </h1>
+                </div>
+                <div className="w-full">
+                  <ul className=" text-lg flex flex-wrap">
+                    <li className="pb-5 w-2/4 ">
+                      <span className="opacity-70 ">
+                        First Name :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        Esra
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        Last Name :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        Tansuk
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">Age :</span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        24
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        Nationality :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        Turkey
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        Freelance :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        Available
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        Address :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        Ankara, Turkey
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">Phone :</span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        +90 555 555 55 55
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">Email :</span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        esra.balkis@outlook.com
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        GitHub Name :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        EsraTansuk
+                      </span>
+                    </li>
+                    <li className="pb-5 w-2/4">
+                      <span className="opacity-70">
+                        Languages :
+                      </span>
+                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        {" "}
+                        English, Turkish, German
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
-                quis adipisci ex exercitationem velit beatae sunt nostrum odit
-                sapiente quo, ipsum saepe quod recusandae ullam similique
-                molestiae voluptatum facere officia!
+              <div className="flex flex-col items-center lg:items-start w-full xl:w-1/2 pe-4">
+                <div className="w-full flex flex-wrap mx-auto">
+                  <div className="w-full lg:w-1/2">
+                    <div className=" mb-8 pt-5 pe-7 pb-6 ps-10 border divide-solid border-borderColor rounded-md ">
+                      <h3 className="text-mainColor font-black text-6xl relative w-6">
+                        1
+                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                      </h3>
+                      <span className="before:content-['--'] text-transparentGray absolute"></span><p className=" pl-11"> YEARS OF <span>EXPERIENCE</span></p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </Tab>
-        <Tab icon={faBriefcase} title="PORTFOLIO">Strawberry is red</Tab>
-        <Tab icon={faEnvelopeOpenText} title="CONTACT">Strawberry is red</Tab>
-        <Tab icon={faComments} title="BLOG">Strawberry is red</Tab>
+        <Tab icon={faBriefcase} title="PORTFOLIO">
+          Strawberry is red
+        </Tab>
+        <Tab icon={faEnvelopeOpenText} title="CONTACT">
+          Strawberry is red
+        </Tab>
+        <Tab icon={faComments} title="BLOG">
+          Strawberry is red
+        </Tab>
       </Tabs>
     </div>
   );
