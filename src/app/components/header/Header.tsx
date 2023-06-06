@@ -71,7 +71,7 @@ export const Header = () => {
                   </h1>
                 </div>
                 <div className="w-full">
-                  <ul className=" text-lg flex flex-wrap">
+                  <ul className=" text-base flex flex-wrap">
                     <li className="pb-5 w-2/4 ">
                       <span className="opacity-70 ">
                         First Name :
@@ -152,7 +152,7 @@ export const Header = () => {
                       </span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
-                        English, Turkish, German
+                        English, German
                       </span>
                     </li>
                   </ul>
