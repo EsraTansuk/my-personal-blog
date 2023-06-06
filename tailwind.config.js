@@ -37,7 +37,8 @@ module.exports = {
         mainColor: "#ffb400",
         iconBgColor: "#2b2a2a",
         shadow: '0 0 7px rgba(0,0,0,.9)',
-        greyBg: '#323232'
+        greyBg: '#323232',
+        transparentGray: 'hsl(0, 0%, 100%, 0.07)',
       },
 
     },

@@ -15,7 +15,7 @@ import { Tab } from "../tabItem/Tab";
 export const Header = () => {
 
   return (
-    <div className=" text-white w-full flex flex-col lg:flex-row h-screen ">
+    <div className=" text-white w-full flex h-screen ">
       <Tabs>
         <Tab icon={faHouse} title="HOME">
           <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
@@ -42,7 +42,7 @@ export const Header = () => {
                   passionate about building excellent software that improves the
                   lives of those around me.
                 </p>
-                <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor">
+                <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
                   <span className="relative">MORE ABOUT ME</span>
                   <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[158px] absolute">
                     <FontAwesomeIcon
@@ -56,7 +56,11 @@ export const Header = () => {
           </div>
         </Tab>
         <Tab icon={faUser} title="ABOUT">
-          <div className=" flex justify-center mt-14 me-20">
+          <div className=" flex flex-col items-center">
+            <div className="w-full text-center relative py-20 ">
+              <h1 className="font-black text-6xl m-0">ABOUT <span className=" text-mainColor">ME</span></h1>
+              <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">RESUME</span>
+            </div>
             <div className="w-full xl:w-3/4 mx-12 md:mx-6 xl:mx-9 flex flex-col lg:flex-row">
               <div className="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
