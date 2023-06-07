@@ -155,7 +155,7 @@ export const Header = () => {
                       YEARS OF <span>EXPERIENCE</span>
                     </p>
                   </div>
-                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                  <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                     <h3 className="text-mainColor font-black text-6xl relative w-10">
                       4
                       <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -168,7 +168,7 @@ export const Header = () => {
                   </div>
                 </div>
                 <div className="w-full gap-10 flex flex-row">
-                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                  <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                     <h3 className="text-mainColor font-black text-6xl relative w-6">
                       1
                       <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -179,7 +179,7 @@ export const Header = () => {
                       HAPPY <span>CUSTOMER</span>
                     </p>
                   </div>
-                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                  <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                     <h3 className="text-mainColor font-black text-6xl relative w-10">
                       2
                       <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
