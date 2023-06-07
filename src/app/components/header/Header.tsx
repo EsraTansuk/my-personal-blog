@@ -63,27 +63,21 @@ export const Header = () => {
                 RESUME
               </span>
             </div>
-            <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-5">
+            <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
               <div className="flex flex-col items-start w-full xl:w-1/2 xl:mx-0 ps-3">
-                <div className="">
-                  <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
-                    PERSONAL INFOS
-                  </h1>
-                </div>
+                <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
+                  PERSONAL INFOS
+                </h1>
                 <div className="w-full">
                   <ul className=" text-base flex flex-wrap">
                     <li className="pb-5 w-2/4 ">
-                      <span className="opacity-70 ">
-                        First Name :
-                      </span>
+                      <span className="opacity-70 ">First Name :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         Esra
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        Last Name :
-                      </span>
+                      <span className="opacity-70">Last Name :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         Tansuk
@@ -97,27 +91,21 @@ export const Header = () => {
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        Nationality :
-                      </span>
+                      <span className="opacity-70">Nationality :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         Turkey
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        Freelance :
-                      </span>
+                      <span className="opacity-70">Freelance :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         Available
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        Address :
-                      </span>
+                      <span className="opacity-70">Address :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         Ankara, Turkey
@@ -138,18 +126,14 @@ export const Header = () => {
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        GitHub Name :
-                      </span>
+                      <span className="opacity-70">GitHub Name :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         EsraTansuk
                       </span>
                     </li>
                     <li className="pb-5 w-2/4">
-                      <span className="opacity-70">
-                        Languages :
-                      </span>
+                      <span className="opacity-70">Languages :</span>
                       <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                         {" "}
                         English, German
@@ -158,16 +142,53 @@ export const Header = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-col items-center lg:items-start w-full xl:w-1/2 pe-4">
-                <div className="w-full flex flex-wrap mx-auto">
-                  <div className="w-full lg:w-1/2">
-                    <div className=" mb-8 pt-5 pe-7 pb-6 ps-10 border divide-solid border-borderColor rounded-md ">
-                      <h3 className="text-mainColor font-black text-6xl relative w-6">
-                        1
-                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
-                      </h3>
-                      <span className="before:content-['--'] text-transparentGray absolute"></span><p className=" pl-11"> YEARS OF <span>EXPERIENCE</span></p>
-                    </div>
+              <div className=" items-center lg:items-start w-full xl:w-1/2 flex flex-col">
+                <div className="w-full gap-10 flex flex-row">
+                  <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
+                    <h3 className="text-mainColor font-black text-6xl relative w-6">
+                      1
+                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                    </h3>
+                    <span className="before:content-['--'] text-transparentGray absolute"></span>
+                    <p className=" pl-11 text-lg">
+                      {" "}
+                      YEARS OF <span>EXPERIENCE</span>
+                    </p>
+                  </div>
+                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                    <h3 className="text-mainColor font-black text-6xl relative w-10">
+                      4
+                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                    </h3>
+                    <span className="before:content-['--'] text-transparentGray absolute"></span>
+                    <p className=" pl-11 text-lg">
+                      {" "}
+                      COMPLETED <span>PROJECT</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="w-full gap-10 flex flex-row">
+                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                    <h3 className="text-mainColor font-black text-6xl relative w-6">
+                      1
+                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                    </h3>
+                    <span className="before:content-['--'] text-transparentGray absolute"></span>
+                    <p className=" pl-11 text-lg">
+                      {" "}
+                      HAPPY <span>CUSTOMER</span>
+                    </p>
+                  </div>
+                  <div className="w-1/2 mb-8 pt-5 pe-16 ps-12 border divide-solid border-borderColor rounded-md ">
+                    <h3 className="text-mainColor font-black text-6xl relative w-10">
+                      2
+                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                    </h3>
+                    <span className="before:content-['--'] text-transparentGray absolute"></span>
+                    <p className=" pl-11 text-lg">
+                      {" "}
+                      CERTIFICATE OF <span>ACHIEVEMENT</span>
+                    </p>
                   </div>
                 </div>
               </div>
