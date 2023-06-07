@@ -11,8 +11,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
+import { Progressbar } from "./components/Progressbar";
 
-export const Header = () => {
+export const Header: React.FC = () => {
+  const htmlPercentage: number = 90;
+  const cssPercentage: number = 80;
   return (
     <div className=" text-white w-full flex h-screen ">
       <Tabs>
@@ -55,140 +58,216 @@ export const Header = () => {
         </Tab>
         <Tab icon={faUser} title="ABOUT">
           <div className="flex flex-col items-center w-full">
-            <div className="w-full text-center relative py-20 ">
-              <h1 className="font-black text-6xl m-0">
-                ABOUT <span className=" text-mainColor">ME</span>
-              </h1>
-              <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
-                RESUME
-              </span>
-            </div>
-            <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
-              <div className="flex flex-col items-start w-full xl:w-1/2 xl:mx-0 ps-3">
-                <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
-                  PERSONAL INFOS
+            <div className="w-full lg:max-w-7xl">
+              <div className="w-full text-center relative py-20 ">
+                <h1 className="font-black text-6xl m-0">
+                  ABOUT <span className=" text-mainColor">ME</span>
                 </h1>
-                <div className="w-full">
-                  <ul className=" text-base flex flex-wrap">
-                    <li className="pb-5 w-2/4 ">
-                      <span className="opacity-70 ">First Name :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        Esra
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Last Name :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
+                  RESUME
+                </span>
+              </div>
+              <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
+                <div className="flex flex-col items-start w-full xl:w-1/2 xl:mx-0 ps-3">
+                  <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
+                    PERSONAL INFOS
+                  </h1>
+                  <div className="w-full">
+                    <ul className=" text-base flex flex-wrap">
+                      <li className="pb-5 w-2/4 ">
+                        <span className="opacity-70 ">First Name :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          Esra
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Last Name :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          Tansuk
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Age :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          24
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Nationality :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          Turkey
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Freelance :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          Available
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Address :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          Ankara, Turkey
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Phone :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          +90 555 555 55 55
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Email :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          esra.balkis@outlook.com
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">GitHub Name :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          EsraTansuk
+                        </span>
+                      </li>
+                      <li className="pb-5 w-2/4">
+                        <span className="opacity-70">Languages :</span>
+                        <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                          {" "}
+                          English, German
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className=" items-center lg:items-start w-full xl:w-1/2 flex flex-col">
+                  <div className="w-full gap-10 flex flex-row">
+                    <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
+                      <h3 className="text-mainColor font-black text-6xl relative w-6">
+                        1
+                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                      </h3>
+                      <span className="before:content-['--'] text-transparentGray absolute"></span>
+                      <p className=" pl-11 text-lg">
                         {" "}
-                        Tansuk
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Age :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        YEARS OF <span>EXPERIENCE</span>
+                      </p>
+                    </div>
+                    <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
+                      <h3 className="text-mainColor font-black text-6xl relative w-10">
+                        4
+                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                      </h3>
+                      <span className="before:content-['--'] text-transparentGray absolute"></span>
+                      <p className=" pl-11 text-lg">
                         {" "}
-                        24
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Nationality :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        COMPLETED <span>PROJECT</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="w-full gap-10 flex flex-row">
+                    <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
+                      <h3 className="text-mainColor font-black text-6xl relative w-6">
+                        1
+                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                      </h3>
+                      <span className="before:content-['--'] text-transparentGray absolute"></span>
+                      <p className=" pl-11 text-lg">
                         {" "}
-                        Turkey
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Freelance :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                        HAPPY <span>CUSTOMER</span>
+                      </p>
+                    </div>
+                    <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
+                      <h3 className="text-mainColor font-black text-6xl relative w-10">
+                        2
+                        <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
+                      </h3>
+                      <span className="before:content-['--'] text-transparentGray absolute"></span>
+                      <p className=" pl-11 text-lg">
                         {" "}
-                        Available
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Address :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        {" "}
-                        Ankara, Turkey
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Phone :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        {" "}
-                        +90 555 555 55 55
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Email :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        {" "}
-                        esra.balkis@outlook.com
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">GitHub Name :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        {" "}
-                        EsraTansuk
-                      </span>
-                    </li>
-                    <li className="pb-5 w-2/4">
-                      <span className="opacity-70">Languages :</span>
-                      <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                        {" "}
-                        English, German
-                      </span>
-                    </li>
-                  </ul>
+                        CERTIFICATE OF <span>ACHIEVEMENT</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className=" items-center lg:items-start w-full xl:w-1/2 flex flex-col">
-                <div className="w-full gap-10 flex flex-row">
-                  <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                    <h3 className="text-mainColor font-black text-6xl relative w-6">
-                      1
-                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
-                    </h3>
-                    <span className="before:content-['--'] text-transparentGray absolute"></span>
-                    <p className=" pl-11 text-lg">
-                      {" "}
-                      YEARS OF <span>EXPERIENCE</span>
-                    </p>
-                  </div>
-                  <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                    <h3 className="text-mainColor font-black text-6xl relative w-10">
-                      4
-                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
-                    </h3>
-                    <span className="before:content-['--'] text-transparentGray absolute"></span>
-                    <p className=" pl-11 text-lg">
-                      {" "}
-                      COMPLETED <span>PROJECT</span>
-                    </p>
-                  </div>
+              <div className="w-full my-6">
+                <div className=" text-center border-t-2 border-borderColor">
+                  <h2 className="text-4xl font-black my-12">My Skills</h2>
                 </div>
-                <div className="w-full gap-10 flex flex-row">
-                  <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                    <h3 className="text-mainColor font-black text-6xl relative w-6">
-                      1
-                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
-                    </h3>
-                    <span className="before:content-['--'] text-transparentGray absolute"></span>
-                    <p className=" pl-11 text-lg">
-                      {" "}
-                      HAPPY <span>CUSTOMER</span>
-                    </p>
-                  </div>
-                  <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                    <h3 className="text-mainColor font-black text-6xl relative w-10">
-                      2
-                      <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
-                    </h3>
-                    <span className="before:content-['--'] text-transparentGray absolute"></span>
-                    <p className=" pl-11 text-lg">
-                      {" "}
-                      CERTIFICATE OF <span>ACHIEVEMENT</span>
-                    </p>
+                <div className="w-full">
+                  <div className=" w-3/4 lg:w-4/4 flex flex-wrap gap-24 mx-auto">
+                    <div className="w-1/2 lg:w-1/4">
+                      <Progressbar
+                        percentage={htmlPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor="rgba(255, 180, 0)"
+                        textColor="#fff"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        text={"html"}
+                        value={0}
+                      />
+                      
+                    </div>
+                    <div className="w-1/2 lg:w-1/4">
+                        <Progressbar
+                          percentage={cssPercentage}
+                          strokeWidth={8}
+                          trailColor="#252525"
+                          pathColor="rgba(255, 180, 0)"
+                          textColor="#fff"
+                          background={false}
+                          backgroundPadding={0}
+                          circleRatio={0}
+                          classes={{
+                            root: "",
+                            trail: "",
+                            path: "",
+                            text: "",
+                            background: "",
+                          }}
+                          className={""}
+                          counterClockwise={false}
+                          maxValue={0}
+                          minValue={0}
+                          styles={{
+                            root: undefined,
+                            trail: undefined,
+                            path: undefined,
+                            text: undefined,
+                            background: undefined,
+                          }}
+                          text={"html"}
+                          value={0}
+                        />
+                      </div>
                   </div>
                 </div>
               </div>
