@@ -551,8 +551,10 @@ export const Header: React.FC = () => {
                 </span>
               </div>
               <div className="w-full">
-                <div className="flex flex-wrap justify-center">
-                  
+                <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
+                  <div>
+                    <img src="/img/project-1.webp" />
+                  </div>
                 </div>
               </div>
             </div>
