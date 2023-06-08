@@ -16,8 +16,17 @@ import { Progressbar } from "./components/Progressbar";
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
   const cssPercentage: number = 80;
+  const scssPercentage: number = 75;
+  const jsPercentage: number = 60;
+  const bootstrapPercentage: number = 90;
+  const reactPercentage: number = 60;
+  const typscriptPercentage: number = 40;
+  const githubPercentage: number = 80;
+  const tailwindPercentage: number = 80;
+  const nextjsPercentage: number = 40;
+
   return (
-    <div className=" text-white w-full flex h-screen ">
+    <div className=" text-white w-full flex h-screen">
       <Tabs>
         <Tab icon={faHouse} title="HOME">
           <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
@@ -68,12 +77,12 @@ export const Header: React.FC = () => {
                 </span>
               </div>
               <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
-                <div className="flex flex-col items-start w-full xl:w-1/2 xl:mx-0 ps-3">
+                <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
                   <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
                     PERSONAL INFOS
                   </h1>
                   <div className="w-full">
-                    <ul className=" text-base flex flex-wrap">
+                    <ul className="text-base flex flex-wrap">
                       <li className="pb-5 w-2/4 ">
                         <span className="opacity-70 ">First Name :</span>
                         <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
@@ -146,8 +155,8 @@ export const Header: React.FC = () => {
                     </ul>
                   </div>
                 </div>
-                <div className=" items-center lg:items-start w-full xl:w-1/2 flex flex-col">
-                  <div className="w-full gap-10 flex flex-row">
+                <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4">
+                  <div className="w-full gap-10 flex flex-row ">
                     <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                       <h3 className="text-mainColor font-black text-6xl relative w-6">
                         1
@@ -171,7 +180,7 @@ export const Header: React.FC = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full gap-10 flex flex-row">
+                  <div className="w-full gap-10 flex flex-row ">
                     <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                       <h3 className="text-mainColor font-black text-6xl relative w-6">
                         1
@@ -197,19 +206,53 @@ export const Header: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full my-6">
-                <div className=" text-center border-t-2 border-borderColor">
-                  <h2 className="text-4xl font-black my-12">My Skills</h2>
+              <div className="w-full my-6 px-4">
+                <div className=" text-center">
+                  <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
+                  <h2 className="text-4xl font-black my-10">My Skills</h2>
                 </div>
-                <div className="w-full">
-                  <div className=" w-3/4 lg:w-4/4 flex flex-wrap gap-24 mx-auto">
-                    <div className="w-1/2 lg:w-1/4">
+                <div className="w-full flex flex-col gap-12 mx-auto">
+                  <div className="w-full flex flex-wrap gap-14 mx-auto">
+                    <div className="px-8">
                       <Progressbar
                         percentage={htmlPercentage}
                         strokeWidth={8}
                         trailColor="#252525"
-                        pathColor="rgba(255, 180, 0)"
+                        pathColor={`rgba(255, 180, 0`}
                         textColor="#fff"
+                        text="HTML"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: { width: "100px" },
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={cssPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="CSS"
                         background={false}
                         backgroundPadding={0}
                         circleRatio={0}
@@ -231,43 +274,265 @@ export const Header: React.FC = () => {
                           text: undefined,
                           background: undefined,
                         }}
-                        text={"html"}
                         value={0}
                       />
-                      
                     </div>
-                    <div className="w-1/2 lg:w-1/4">
-                        <Progressbar
-                          percentage={cssPercentage}
-                          strokeWidth={8}
-                          trailColor="#252525"
-                          pathColor="rgba(255, 180, 0)"
-                          textColor="#fff"
-                          background={false}
-                          backgroundPadding={0}
-                          circleRatio={0}
-                          classes={{
-                            root: "",
-                            trail: "",
-                            path: "",
-                            text: "",
-                            background: "",
-                          }}
-                          className={""}
-                          counterClockwise={false}
-                          maxValue={0}
-                          minValue={0}
-                          styles={{
-                            root: undefined,
-                            trail: undefined,
-                            path: undefined,
-                            text: undefined,
-                            background: undefined,
-                          }}
-                          text={"html"}
-                          value={0}
-                        />
-                      </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={scssPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="SASS"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={jsPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="JAVASCRİPT"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={tailwindPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="TAILWIND"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={bootstrapPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="BOOTSTRAP"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={reactPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="REACT JS"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={typscriptPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="TYPESCRIPT"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={githubPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="GITHUB"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
+                    <div className="px-8">
+                      <Progressbar
+                        percentage={nextjsPercentage}
+                        strokeWidth={8}
+                        trailColor="#252525"
+                        pathColor={`rgba(255, 180, 0`}
+                        textColor="#fff"
+                        text="NEXT JS"
+                        background={false}
+                        backgroundPadding={0}
+                        circleRatio={0}
+                        classes={{
+                          root: "",
+                          trail: "",
+                          path: "",
+                          text: "",
+                          background: "",
+                        }}
+                        className={""}
+                        counterClockwise={false}
+                        maxValue={0}
+                        minValue={0}
+                        styles={{
+                          root: undefined,
+                          trail: undefined,
+                          path: undefined,
+                          text: undefined,
+                          background: undefined,
+                        }}
+                        value={0}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
