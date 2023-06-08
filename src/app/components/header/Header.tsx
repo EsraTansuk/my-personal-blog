@@ -540,7 +540,23 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faBriefcase} title="PORTFOLIO">
-          Strawberry is red
+          <div className="flex flex-col items-center w-full">
+            <div className="w-full lg:max-w-7xl">
+              <div className="w-full text-center relative py-20 ">
+                <h1 className="font-black text-6xl m-0">
+                  MY <span className=" text-mainColor">PORTFOLIO</span>
+                </h1>
+                <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
+                  WORKS
+                </span>
+              </div>
+              <div className="w-full">
+                <div className="flex flex-wrap justify-center">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </Tab>
         <Tab icon={faEnvelopeOpenText} title="CONTACT">
           Strawberry is red
