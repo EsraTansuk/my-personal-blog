@@ -11,8 +11,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
-import { Progressbar } from "./components/Progressbar";
+
 import Image from "next/image";
+import { Progressbar, Title } from "./components";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -69,14 +70,7 @@ export const Header: React.FC = () => {
         <Tab icon={faUser} title="ABOUT">
           <div className="flex flex-col items-center w-full">
             <div className="w-full lg:max-w-7xl">
-              <div className="w-full text-center relative py-20 ">
-                <h1 className="font-black text-6xl m-0">
-                  ABOUT <span className=" text-mainColor">ME</span>
-                </h1>
-                <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
-                  RESUME
-                </span>
-              </div>
+              <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
               <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
                 <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
                   <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
@@ -543,16 +537,10 @@ export const Header: React.FC = () => {
         <Tab icon={faBriefcase} title="PORTFOLIO">
           <div className="flex flex-col items-center w-full">
             <div className="w-full lg:max-w-7xl">
-              <div className="w-full text-center relative py-20 ">
-                <h1 className="font-black text-6xl m-0">
-                  MY <span className=" text-mainColor">PORTFOLIO</span>
-                </h1>
-                <span className="absolute text-9xl tracking-wider text-center font-extrabold text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
-                  WORKS
-                </span>
-              </div>
+            <Title titleOne="MY" titleTwo="PORTFOLIO" titleBackground="WORKS" />
+
               <div className="w-full mb-8">
-                <div className="w-full px-4 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-7 xl:mx-auto  ">
+                <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
                   <div className="w-full h-full">
                     <div className="w-full h-64 relative cursor-pointer flex">
                       <Image

@@ -14,7 +14,7 @@ export const TabTitle: React.FC<Props> = ({ icon, setSelectedTab, index, title }
   const [displayShowMore, setDisplayShowMore] = useState(false);
   
   const showMoreClass = classNames(
-    " hidden md:flex absolute top-0 -right-4 rounded-3xl -z-10 bg-mainColor pr-16 pl-7 h-14 flex items-center opacity-0 text-lg font-medium transition-transform",
+    " hidden lg:flex absolute top-0 -right-4 rounded-3xl -z-10 bg-mainColor pr-16 pl-7 h-14 flex items-center opacity-0 text-lg font-medium transition-transform",
     {
       "-translate-x-4 duration-300 opacity-100": displayShowMore,
     },
