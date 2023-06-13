@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
   faComments,
-  faEnvelopeOpenText,
+  faEnvelopeOpen,
   faHouse,
+  faMapMarkerAlt,
+  faPaperPlane,
+  faPhoneAlt,
   faRightLong,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -699,10 +702,77 @@ export const Header: React.FC = () => {
             </div>
           </div>
         </Tab>
-        <Tab icon={faEnvelopeOpenText} title="CONTACT">
+        <Tab icon={faEnvelopeOpen} title="CONTACT">
           <div className="flex flex-col items-center w-full">
             <div className="w-full lg:max-w-7xl">
-              <Title titleOne="GET IN" titleTwo="TOUCH" titleBackground="CONTACT" />
+              <Title
+                titleOne="GET IN"
+                titleTwo="TOUCH"
+                titleBackground="CONTACT"
+              />
+              <div className="flex flex-col lg:flex-row justify-between items-center">
+                <div className="w-full lg:w-1/2">
+                  <h3 className=" text-2xl">DONT'T BE SHY</h3>
+                  <p className="mb-4">
+                    Feel free to get in touch with me. I am always open to
+                    discussing new projects, creative ideas or opportunities to
+                    be part of your visions.
+                  </p>
+                  <p>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
+                    <span>ADDRESS POINT</span>
+                    123 Stree New York City , United States Of America 750065.
+                  </p>
+                  <p>
+                    <FontAwesomeIcon icon={faEnvelopeOpen} />
+                    <span>MAIL ME</span>
+                    <a href="mailto:esra.tansuk@gmail.com">
+                      esra.tansuk@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <FontAwesomeIcon icon={faPhoneAlt} />
+                    <span>CALL ME</span>
+                    <a href="tel:+905323456789">+90 532 345 67 89</a>
+                  </p>
+                </div>
+                <div className="w-full lg:w-1/2">
+                  <form className="flex flex-col">
+                    <input
+                      type="text"
+                      placeholder="YOUR NAME"
+                      className="mb-4 p-2 border border-gray-300 rounded-md"
+                    />
+                    <input
+                      type="email"
+                      placeholder="YOUR EMAIL"
+                      className="mb-4 p-2 border border-gray-300 rounded-md"
+                    />
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="YOUR SUBJECT"
+                      className="mb-4 p-2 border border-gray-300 rounded-md"
+                    />
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="YOUR MESSAGE"
+                      className="mb-4 p-2 border border-gray-300 rounded-md"
+                    ></textarea>
+
+                    <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
+                      <span className="relative">SEND MESSAGE</span>
+                      <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
+                        <FontAwesomeIcon
+                          icon={faPaperPlane}
+                          style={{ width: "50px", height: "30px" }}
+                        />
+                      </span>
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </Tab>
