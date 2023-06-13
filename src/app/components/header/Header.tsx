@@ -56,7 +56,7 @@ export const Header: React.FC = () => {
                 </p>
                 <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
                   <span className="relative">MORE ABOUT ME</span>
-                  <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[158px] absolute">
+                  <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
                     <FontAwesomeIcon
                       icon={faRightLong}
                       style={{ width: "50px", height: "30px" }}
@@ -73,7 +73,7 @@ export const Header: React.FC = () => {
               <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
               <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
                 <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
-                  <h1 className=" text-3xl font-extrabold mb-6 pb-1 border-b-2 border-mainColor">
+                  <h1 className=" text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor">
                     PERSONAL INFOS
                   </h1>
                   <div className="w-full">
@@ -153,7 +153,7 @@ export const Header: React.FC = () => {
                 <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4">
                   <div className="w-full gap-10 flex flex-row ">
                     <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                      <h3 className="text-mainColor font-black text-6xl relative w-6">
+                      <h3 className="text-mainColor font-semibold text-6xl relative w-6">
                         1
                         <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                       </h3>
@@ -164,7 +164,7 @@ export const Header: React.FC = () => {
                       </p>
                     </div>
                     <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                      <h3 className="text-mainColor font-black text-6xl relative w-10">
+                      <h3 className="text-mainColor font-semibold text-6xl relative w-10">
                         4
                         <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                       </h3>
@@ -177,7 +177,7 @@ export const Header: React.FC = () => {
                   </div>
                   <div className="w-full gap-10 flex flex-row ">
                     <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                      <h3 className="text-mainColor font-black text-6xl relative w-6">
+                      <h3 className="text-mainColor font-semibold text-6xl relative w-6">
                         1
                         <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                       </h3>
@@ -188,7 +188,7 @@ export const Header: React.FC = () => {
                       </p>
                     </div>
                     <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
-                      <h3 className="text-mainColor font-black text-6xl relative w-10">
+                      <h3 className="text-mainColor font-semibold text-6xl relative w-10">
                         2
                         <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                       </h3>
@@ -204,7 +204,7 @@ export const Header: React.FC = () => {
               <div className="w-full my-6 px-4">
                 <div className=" text-center">
                   <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
-                  <h2 className="text-4xl font-black my-10">My Skills</h2>
+                  <h2 className="text-4xl font-semibold my-10">My Skills</h2>
                 </div>
                 <div className="w-full flex flex-col gap-12 mx-auto">
                   <div className="w-full flex flex-wrap gap-14 mx-auto">
@@ -537,7 +537,11 @@ export const Header: React.FC = () => {
         <Tab icon={faBriefcase} title="PORTFOLIO">
           <div className="flex flex-col items-center w-full">
             <div className="w-full lg:max-w-7xl">
-            <Title titleOne="MY" titleTwo="PORTFOLIO" titleBackground="WORKS" />
+              <Title
+                titleOne="MY"
+                titleTwo="PORTFOLIO"
+                titleBackground="WORKS"
+              />
 
               <div className="w-full mb-8">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
@@ -696,7 +700,11 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faEnvelopeOpenText} title="CONTACT">
-          Strawberry is red
+          <div className="flex flex-col items-center w-full">
+            <div className="w-full lg:max-w-7xl">
+              <Title titleOne="GET IN" titleTwo="TOUCH" titleBackground="CONTACT" />
+            </div>
+          </div>
         </Tab>
         <Tab icon={faComments} title="BLOG">
           Strawberry is red
