@@ -24,6 +24,8 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { BlogItem } from "./components/blog-item";
+import { PortfolioItem } from "./components/portfolio-item";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -555,155 +557,51 @@ export const Header: React.FC = () => {
 
               <div className="w-full mb-8">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-1.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-2.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-3.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-4.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-5.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-6.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-7.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-8.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
-                  <div className="w-full h-full">
-                    <div className="w-full h-64 relative cursor-pointer flex">
-                      <Image
-                        src="/img/project-9.webp"
-                        alt="project1"
-                        width={895}
-                        height={552}
-                        className="absolute top-0 left-0 w-full h-full rounded-lg "
-                      />
-                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full transition-all duration-700 flex justify-center items-center text-lg rounded-lg bg-mainColor opacity-0 hover:opacity-100">
-                        <span className="transition-all duration-500 ease-in-out transform relative ">
-                          MOCKUP PROJECT
-                        </span>
-                      </h3>
-                    </div>
-                  </div>
+                  <PortfolioItem
+                    src="/img/project-1.webp"
+                    alt="project1"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-2.webp"
+                    alt="project2"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-3.webp"
+                    alt="project3"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-4.webp"
+                    alt="project4"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-5.webp"
+                    alt="project5"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-6.webp"
+                    alt="project6"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-7.webp"
+                    alt="project7"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-8.webp"
+                    alt="project8"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
+                  <PortfolioItem
+                    src="/img/project-9.webp"
+                    alt="project9"
+                    hoverTitle={"MOCKUP PROJECT"}
+                  />
                 </div>
               </div>
             </div>
@@ -852,26 +750,47 @@ export const Header: React.FC = () => {
               <Title titleOne="MY" titleTwo="BLOG" titleBackground="POSTS" />
               <div className="w-full mb-8">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
-                  <div className="block cursor-pointer overflow-hidden rounded-md">
-                    <div className=" border-b-4 border-mainColor rounded-t-md">
-                      <div className="relative overflow-hidden block h-64">
-                        <Image
-                          src="/img/blog-post-1.webp"
-                          alt="blog-post-1"
-                          width={895}
-                          height={552}
-                          className="absolute top-0 left-0 w-full h-full rounded-lg "
-                        />
-                      </div>
-                    </div>
-                    <div className=" bg-borderColor pt-5 px-6 pb-6 rounded-b-md">
-                      <div className=" box-border ">
-                        <h3 className=" text-tWhite text-lg font-semibold ">
-                          How to Own Your Audience by Creating an Email List
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
+                  <BlogItem
+                    src="/img/blog-post-1.webp"
+                    alt="Blog Post 1"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
+
+                  <BlogItem
+                    src="/img/blog-post-2.webp"
+                    alt="Blog Post 2"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
+
+                  <BlogItem
+                    src="/img/blog-post-3.webp"
+                    alt="Blog Post 3"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
+
+                  <BlogItem
+                    src="/img/blog-post-4.webp"
+                    alt="Blog Post 4"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
+
+                  <BlogItem
+                    src="/img/blog-post-5.webp"
+                    alt="Blog Post 5"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
+
+                  <BlogItem
+                    src="/img/blog-post-6.webp"
+                    alt="Blog Post 6"
+                    title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
+                  />
                 </div>
               </div>
             </div>
