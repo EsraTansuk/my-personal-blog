@@ -847,7 +847,35 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faComments} title="BLOG">
-          Strawberry is red
+          <div className="flex flex-col items-center w-full">
+            <div className="w-full lg:max-w-7xl">
+              <Title titleOne="MY" titleTwo="BLOG" titleBackground="POSTS" />
+              <div className="w-full mb-8">
+                <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
+                  <div className="block cursor-pointer overflow-hidden rounded-md">
+                    <div className=" border-b-4 border-mainColor rounded-t-md">
+                      <div className="relative overflow-hidden block h-64">
+                        <Image
+                          src="/img/blog-post-1.webp"
+                          alt="blog-post-1"
+                          width={895}
+                          height={552}
+                          className="absolute top-0 left-0 w-full h-full rounded-lg "
+                        />
+                      </div>
+                    </div>
+                    <div className=" bg-borderColor pt-5 px-6 pb-6 rounded-b-md">
+                      <div className=" box-border ">
+                        <h3 className=" text-tWhite text-lg font-semibold ">
+                          How to Own Your Audience by Creating an Email List
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </Tab>
       </Tabs>
     </div>
