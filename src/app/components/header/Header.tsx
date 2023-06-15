@@ -705,12 +705,12 @@ export const Header: React.FC = () => {
                       <input
                         type="text"
                         placeholder="YOUR NAME"
-                        className="w-full mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
+                        className="w-full mb-4 py-3 px-6 border text-lg outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor bg-borderColor border-bodyDarkColor rounded-full"
                       />
                       <input
                         type="email"
                         placeholder="YOUR EMAIL"
-                        className="w-full mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
+                        className="w-full outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
                       />
                     </div>
 
@@ -718,13 +718,13 @@ export const Header: React.FC = () => {
                       type="text"
                       name="subject"
                       placeholder="YOUR SUBJECT"
-                      className="mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
+                      className="mb-4 outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
                     />
                     <textarea
                       name="message"
                       id="message"
                       placeholder="YOUR MESSAGE"
-                      className="mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-3xl h-52"
+                      className="mb-4 outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-3xl h-52"
                     ></textarea>
 
                     <div className="mt-3">
