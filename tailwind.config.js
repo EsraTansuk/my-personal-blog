@@ -39,7 +39,8 @@ module.exports = {
         shadow: '0 0 7px rgba(0,0,0,.9)',
         greyBg: '#323232',
         transparentGray: 'hsl(0, 0%, 100%, 0.07)',
-        borderColor: '#252525'
+        borderColor: '#252525',
+        tWhite: '#fff',
       },
 
     },
