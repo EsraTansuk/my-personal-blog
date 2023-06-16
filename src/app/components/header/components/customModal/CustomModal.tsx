@@ -4,13 +4,13 @@ import React, { FC, PropsWithChildren } from "react";
 // Package Imports
 import Modal from "react-modal";
 
-
 const customStyles = {
-  style: {
-    overlay: {
-      backgroundColor: "rgba(0, 0, 0, 0.75)",
-    },
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 1)",
+    opacity: 1,
+    zIndex: 40,
   },
+
   content: {
     top: "50%",
     left: "50%",
@@ -18,7 +18,9 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor:"#323232",
+    backgroundColor: "#323232",
+    border: "none",
+    borderRadius: "10px",
   },
 };
 

@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
-  faCalendarAlt,
   faComments,
   faEnvelopeOpen,
   faHouse,
@@ -13,10 +12,12 @@ import {
   faSquarePhoneFlip,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
+
 import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
 
-import Image from "next/image";
 import { Progressbar, Title } from "./components";
 import {
   faFacebookF,
@@ -27,7 +28,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { BlogItem } from "./components/blog-item";
 import { PortfolioItem } from "./components/portfolio-item";
-import { CustomModal } from "./components/customModal";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -758,14 +758,21 @@ export const Header: React.FC = () => {
                     title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
                   >
-                    <div className="flex flex-row gap-4">
-                      <div className="flex flex-row gap-2">
-                        <FontAwesomeIcon
-                          icon={faCalendarAlt}
-                          className="text-mainColor"
+                    <button className=" flex z-50 ml-[710px]">
+                      <FontAwesomeIcon
+                        icon={faCircleXmark}
+                        style={{ color: "#fff" }}
+                        size="2xl"
+                      />
+                    </button>
+                    <div className="py-o px-12 h-[75vh] w-[750px] overflow-y-auto">
+                      <article>
+                        <Title
+                          titleOne="POST"
+                          titleTwo="DETAILS"
+                          titleBackground="POSTS"
                         />
-                        <span className="text-bodyDarkColor text-sm"></span>
-                      </div>
+                      </article>
                     </div>
                   </BlogItem>
 
