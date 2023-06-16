@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
+  faCalendarAlt,
   faComments,
   faEnvelopeOpen,
   faHouse,
@@ -26,6 +27,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { BlogItem } from "./components/blog-item";
 import { PortfolioItem } from "./components/portfolio-item";
+import { CustomModal } from "./components/customModal";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -755,7 +757,17 @@ export const Header: React.FC = () => {
                     alt="Blog Post 1"
                     title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
-                  />
+                  >
+                    <div className="flex flex-row gap-4">
+                      <div className="flex flex-row gap-2">
+                        <FontAwesomeIcon
+                          icon={faCalendarAlt}
+                          className="text-mainColor"
+                        />
+                        <span className="text-bodyDarkColor text-sm"></span>
+                      </div>
+                    </div>
+                  </BlogItem>
 
                   <BlogItem
                     src="/img/blog-post-2.webp"
