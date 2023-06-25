@@ -765,12 +765,13 @@ export const Header: React.FC = () => {
                         size="2xl"
                       />
                     </button>
-                    <div className="py-o px-12 h-[75vh] w-[750px] overflow-y-auto">
+                    <div className="py-0 px-12 h-[75vh] w-[750px] overflow-y-auto">
                       <article>
                         <Title
                           titleOne="POST"
                           titleTwo="DETAILS"
                           titleBackground="POSTS"
+                          pySmall
                         />
                       </article>
                     </div>

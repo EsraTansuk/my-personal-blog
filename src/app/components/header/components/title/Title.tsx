@@ -1,14 +1,24 @@
 import React from "react";
+import clsx from 'clsx';
 
 interface TitleProps {
   titleOne: string;
   titleTwo: string;
   titleBackground: string;
+  pySmall?: boolean;
 }
 
-export const Title: React.FC<TitleProps> = ({ titleOne, titleTwo, titleBackground }) => {
+export const Title: React.FC<TitleProps> = ({ titleOne, titleTwo, titleBackground, pySmall}) => {
   return (
-    <div className="w-full text-center relative py-20 ">
+    <div className={clsx('w-full text-center relative', 
+    {
+      'py-20': !pySmall
+    },
+    {
+      'py-10': pySmall
+    }
+
+    )}>
       <h1 className="font-black text-6xl m-0 text-tWhite">
         {titleOne} <span className=" text-mainColor">{titleTwo}</span>
       </h1>
