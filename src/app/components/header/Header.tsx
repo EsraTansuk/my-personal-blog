@@ -82,7 +82,7 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faUser} title="ABOUT">
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full pb-7">
             <div className="w-full lg:max-w-7xl">
               <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
               <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
@@ -557,7 +557,7 @@ export const Header: React.FC = () => {
                 titleBackground="WORKS"
               />
 
-              <div className="w-full mb-8">
+              <div className="w-full mb-20 lg:mb-12">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
                   <PortfolioItem
                     src="/img/project-1.webp"
@@ -617,8 +617,8 @@ export const Header: React.FC = () => {
                 titleTwo="TOUCH"
                 titleBackground="CONTACT"
               />
-              <div className="flex flex-col lg:flex-row justify-between items-center gap-12 mt-7">
-                <div className="w-full lg:w-2/6 pr-5">
+              <div className="flex flex-col  lg:flex-row justify-between items-center gap-12 mt-7 mb-20">
+                <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5">
                   <h3 className=" text-3xl pb-4 font-medium">DON'T BE SHY!</h3>
                   <p className=" mb-6 text-base">
                     Feel free to get in touch with me. I am always open to
@@ -701,7 +701,7 @@ export const Header: React.FC = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="w-full lg:w-3/5">
+                <div className="w-full px-4 lg:w-3/5">
                   <form className="flex flex-col gap-4">
                     <div className="flex flex-row gap-4 ">
                       <input
@@ -750,7 +750,7 @@ export const Header: React.FC = () => {
           <div className="flex flex-col items-center w-full">
             <div className="w-full lg:max-w-7xl">
               <Title titleOne="MY" titleTwo="BLOG" titleBackground="POSTS" />
-              <div className="w-full mb-8">
+              <div className="w-full mb-14">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">
                   <BlogItem
                     src="/img/blog-post-1.webp"
