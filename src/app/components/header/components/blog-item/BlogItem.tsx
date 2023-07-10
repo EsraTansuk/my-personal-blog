@@ -2,6 +2,8 @@ import React, { PropsWithChildren } from "react";
 import Image from "next/image";
 import { CustomModal } from "../customModal";
 import { useModal } from "../customModal/useModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 interface BlogItemProps extends PropsWithChildren {
   title: string;
@@ -18,7 +20,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({
   children,
 }) => {
   const { isOpen, closeModal, openModal, toggleModal } = useModal();
-  
+
   return (
     <>
       <div
@@ -49,6 +51,13 @@ export const BlogItem: React.FC<BlogItemProps> = ({
       </div>
 
       <CustomModal isOpen={isOpen} onClose={closeModal}>
+        <button className=" flex z-50 ml-[730px] mb-2" onClick={closeModal}>
+          <FontAwesomeIcon
+            icon={faCircleXmark}
+            style={{ color: "#fff" }}
+            size="2xl"
+          />
+        </button>
         {children}
       </CustomModal>
     </>

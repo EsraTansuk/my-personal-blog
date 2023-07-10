@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
-  faCalendarAlt,
   faComments,
   faEnvelopeOpen,
   faHouse,
@@ -12,10 +11,7 @@ import {
   faRightLong,
   faSquarePhoneFlip,
   faUser,
-  faTags,
 } from "@fortawesome/free-solid-svg-icons";
-
-import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
@@ -30,6 +26,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { BlogItem } from "./components/blog-item";
 import { PortfolioItem } from "./components/portfolio-item";
+import { BlogDetail } from "./components/blog-detail";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -760,13 +757,8 @@ export const Header: React.FC = () => {
                     title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam, voluptates.."
                   >
-                    <button className=" flex z-50 ml-[710px]">
-                      <FontAwesomeIcon
-                        icon={faCircleXmark}
-                        style={{ color: "#fff" }}
-                        size="2xl"
-                      />
-                    </button>
+                    
+
                     <div className="py-0 px-12 h-[75vh] w-[750px] overflow-y-auto force-overflow large-2">
                       <article>
                         <Title
@@ -776,76 +768,47 @@ export const Header: React.FC = () => {
                           pySmall
                         />
                       </article>
-                      <div className="my-7">
-                        <span className="text-base font-semibold">
-                          <FontAwesomeIcon
-                            icon={faUser}
-                            className=" text-mainColor"
-                          />
-                          <span className="ml-2 text-lGray text-sm">
-                            John Doe
-                          </span>
-                        </span>
-                        <span className="text-base font-semibold ml-4">
-                          <FontAwesomeIcon
-                            icon={faCalendarAlt}
-                            className=" text-mainColor"
-                          />
-                          <span className="ml-2 text-lGray text-sm">
-                            12.05.2021
-                          </span>
-                        </span>
-                        <span className="text-base font-semibold ml-4">
-                          <FontAwesomeIcon
-                            icon={faTags}
-                            className=" text-mainColor"
-                          />
-                          <span className="ml-2 text-lGray text-sm">
-                            wordpress, business, economy, design
-                          </span>
-                        </span>
-                      </div>
-                      <h1 className="text-[2.5rem] text-lGray font-semibold leading-normal">
-                        How to Own Your Audience by Creating an Email List
-                      </h1>
-                      <img src="/img/blog-post-1.webp" alt="Blog Post 1" />
-                      <p className="my-5 text-lg text-lGray">
-                        Tomfoolery crikey bits and bobs brilliant bamboozled
-                        down the pub amongst brolly hanky panky, cack bonnet
-                        arse over tit burke bugger all mate bodge. cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.Suspendisse interdum
-                        consectetur libero id faucibu nisl. Lacus vel facilisis
-                        volutpat est velit egestas.
-                      </p>
-                      <p className="my-5 text-lg text-lGray">
-                        Most photographers find it hard to see interesting
-                        pictures in places in which they are most familiar. A
-                        trip somewhere new seems always exactly what our
-                        photography needed, as shooting away from home
-                        consistently inspires us to new artistic heights.
-                      </p>
-                      <p className="my-5 text-lg text-lGray">
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est
-                        laborum.Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.
-                      </p>
-                      <p className="my-5 text-lg text-lGray">
-                        Riosum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <BlogDetail
+                        src="/img/blog-post-1.webp"
+                        alt="Blog Post 1"
+                        author="John Doe"
+                        date="May 10, 2021"
+                        tags="wordpress, business, economy, design"
+                        title="How to Own Your Audience by Creating an Email List"
+                        text="Tomfoolery crikey bits and bobs brilliant bamboozled
+                      down the pub amongst brolly hanky panky, cack bonnet
+                      arse over tit burke bugger all mate bodge. cillum dolore
+                      eu fugiat nulla pariatur. Excepteur sint occaecat
+                      cupidatat non proident, sunt in culpa qui officia
+                      deserunt mollit anim id est laborum.Suspendisse interdum
+                      consectetur libero id faucibu nisl. Lacus vel facilisis
+                      volutpat est velit egestas.
+                    
+                      Most photographers find it hard to see interesting
+                      pictures in places in which they are most familiar. A
+                      trip somewhere new seems always exactly what our
+                      photography needed, as shooting away from home
+                      consistently inspires us to new artistic heights.
+                    
+                      Excepteur sint occaecat cupidatat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est
+                      laborum.Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna.
+                    
+                      Riosum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit
+                      anim id est laborum.Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                    "
+                      />
                     </div>
                   </BlogItem>
 
