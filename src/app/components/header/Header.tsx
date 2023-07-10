@@ -54,7 +54,7 @@ export const Header: React.FC = () => {
                   backgroundSize: "cover",
                   backgroundPosition: "top",
                   backgroundRepeat: "no-repeat",
-                  boxShadow: "box-shadow: 0 0 7px rgba(0,0,0,.9)",
+                  boxShadow: " 0 0 7px rgba(0,0,0,.9)",
                 }}
               ></div>
               <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left md:px-12 lg:px-20 2xl:px-48 mb-10">
