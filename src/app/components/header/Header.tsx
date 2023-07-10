@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
+  faCalendarAlt,
   faComments,
   faEnvelopeOpen,
   faHouse,
@@ -11,6 +12,8 @@ import {
   faRightLong,
   faSquarePhoneFlip,
   faUser,
+  faTags,
+
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
@@ -774,6 +777,22 @@ export const Header: React.FC = () => {
                           pySmall
                         />
                       </article>
+                      <div className="my-7">
+                        <span className="text-base font-semibold">
+                          <FontAwesomeIcon icon={faUser} className=" text-mainColor" />
+                          <span className="ml-2 text-lGray text-sm">John Doe</span>
+                        </span>
+                        <span className="text-base font-semibold ml-4">
+                          <FontAwesomeIcon icon={faCalendarAlt} className=" text-mainColor"/>
+                          <span className="ml-2 text-lGray text-sm">12.05.2021</span>
+                        </span>
+                        <span className="text-base font-semibold ml-4">
+                          <FontAwesomeIcon icon={faTags} className=" text-mainColor"/>
+                          <span className="ml-2 text-lGray text-sm">
+                            wordpress, business, economy, design
+                          </span>
+                        </span>
+                      </div>
                     </div>
                   </BlogItem>
 
