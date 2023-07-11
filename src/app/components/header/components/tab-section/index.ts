@@ -1,0 +1,5 @@
+export * from './HomeSection'
+export * from './AboutSection'
+export * from './PortfolioSection'
+export * from './ContactSection'
+export * from './BlogSection'
