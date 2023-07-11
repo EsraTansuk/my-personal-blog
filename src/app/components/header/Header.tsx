@@ -13,6 +13,8 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
+
 import { Tabs } from "../tabItem/Tabs";
 import { Tab } from "../tabItem/Tab";
 
@@ -27,6 +29,8 @@ import {
 import { BlogItem } from "./components/blog-item";
 import { PortfolioItem } from "./components/portfolio-item";
 import { BlogDetail } from "./components/blog-detail";
+import { CustomModal } from "./components/customModal";
+import { useModal } from "./components/customModal/useModal";
 
 export const Header: React.FC = () => {
   const htmlPercentage: number = 90;
@@ -39,6 +43,8 @@ export const Header: React.FC = () => {
   const githubPercentage: number = 80;
   const tailwindPercentage: number = 80;
   const nextjsPercentage: number = 40;
+
+  const { isOpen, closeModal, openModal, toggleModal } = useModal();
 
   return (
     <div className=" text-white w-full flex h-screen">
@@ -67,7 +73,7 @@ export const Header: React.FC = () => {
                   passionate about building excellent software that improves the
                   lives of those around me.
                 </p>
-                <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
+                <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out" onClick={() => openModal()}>
                   <span className="relative">MORE ABOUT ME</span>
                   <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
                     <FontAwesomeIcon
@@ -76,12 +82,25 @@ export const Header: React.FC = () => {
                     />
                   </span>
                 </button>
+                <CustomModal isOpen={isOpen} onClose={closeModal}>
+                  <button
+                    className=" flex z-50 ml-[730px] mb-2"
+                    onClick={closeModal}
+                  >
+                    <FontAwesomeIcon
+                      icon={faCircleXmark}
+                      style={{ color: "#fff" }}
+                      size="2xl"
+                    />
+                  </button>
+                  
+                </CustomModal>
               </div>
             </div>
           </div>
         </Tab>
         <Tab icon={faUser} title="ABOUT">
-          <div className="flex flex-col items-center w-full pb-7">
+          <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
             <div className="w-full lg:max-w-7xl">
               <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
               <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
@@ -548,7 +567,7 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faBriefcase} title="PORTFOLIO">
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
             <div className="w-full lg:max-w-7xl">
               <Title
                 titleOne="MY"
@@ -609,7 +628,7 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faEnvelopeOpen} title="CONTACT">
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
             <div className="w-full lg:max-w-7xl">
               <Title
                 titleOne="GET IN"
@@ -746,7 +765,7 @@ export const Header: React.FC = () => {
           </div>
         </Tab>
         <Tab icon={faComments} title="BLOG">
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
             <div className="w-full lg:max-w-7xl">
               <Title titleOne="MY" titleTwo="BLOG" titleBackground="POSTS" />
               <div className="w-full mb-14">
