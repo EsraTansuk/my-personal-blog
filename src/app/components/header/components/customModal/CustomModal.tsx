@@ -50,7 +50,7 @@ export const CustomModal: FC<CustomModalProps> = ({
       isOpen={isOpen}
       onAfterOpen={afterOpenModal}
       onRequestClose={onClose}
-      style={customStyles}
+      style={customStyles as any}
       contentLabel="Example Modal"
     >
       {children}

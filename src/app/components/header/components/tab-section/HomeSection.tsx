@@ -4,8 +4,16 @@ import { useModal } from "../customModal/useModal";
 import { CustomModal } from "../customModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faRightLong } from "@fortawesome/free-solid-svg-icons";
+import { AboutSection } from "./AboutSection";
 
 export const HomeSection = () => {
+  const aboutPageModalStyle = {
+    ...CustomModal,
+    backgroundColor: "#111",
+    overlay: {
+      backgroundColor: "#efef",
+    },
+  };
   const { isOpen, closeModal, openModal, toggleModal } = useModal();
   return (
     <>
@@ -44,17 +52,25 @@ export const HomeSection = () => {
                 />
               </span>
             </button>
-            <CustomModal isOpen={isOpen} onClose={closeModal}>
-              <button
-                className=" flex z-50 ml-[730px] mb-2"
-                onClick={closeModal}
-              >
-                <FontAwesomeIcon
-                  icon={faCircleXmark}
-                  style={{ color: "#fff" }}
-                  size="2xl"
-                />
-              </button>
+            <CustomModal
+              isOpen={isOpen}
+              onClose={closeModal}
+              className="about-page-modal force-overflow large-2 "
+              
+            >
+              <div style={aboutPageModalStyle}>
+                <button
+                  className=" flex z-50 ml-[1340px] mb-2 mt-4"
+                  onClick={closeModal}
+                >
+                  <FontAwesomeIcon
+                    icon={faCircleXmark}
+                    style={{ color: "#fff" }}
+                    size="2xl"
+                  />
+                </button>
+                <AboutSection />
+              </div>
             </CustomModal>
           </div>
         </div>

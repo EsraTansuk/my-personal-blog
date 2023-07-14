@@ -20,11 +20,11 @@ export const AboutSection = () => {
         <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
         <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
           <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
-            <h1 className=" text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor">
+            <h1 className=" text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-tWhite">
               PERSONAL INFOS
             </h1>
             <div className="w-full">
-              <ul className="text-base flex flex-wrap">
+              <ul className="text-base flex flex-wrap text-tWhite">
                 <li className="pb-5 w-2/4 ">
                   <span className="opacity-70 ">First Name :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
@@ -97,7 +97,7 @@ export const AboutSection = () => {
               </ul>
             </div>
           </div>
-          <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4">
+          <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4 text-tWhite">
             <div className="w-full gap-10 flex flex-row ">
               <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-6xl relative w-6">
@@ -148,7 +148,7 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full my-6 px-4">
+        <div className="w-full my-6 px-4 text-tWhite">
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-4xl font-semibold my-10">My Skills</h2>
