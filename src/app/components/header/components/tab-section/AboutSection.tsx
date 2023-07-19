@@ -1,19 +1,22 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Progressbar } from "../progressbar";
 import { Title } from "../title";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 export const AboutSection = () => {
-    const htmlPercentage: number = 90;
-    const cssPercentage: number = 80;
-    const scssPercentage: number = 75;
-    const jsPercentage: number = 60;
-    const bootstrapPercentage: number = 90;
-    const reactPercentage: number = 60;
-    const typscriptPercentage: number = 40;
-    const githubPercentage: number = 80;
-    const tailwindPercentage: number = 80;
-    const nextjsPercentage: number = 40;
-    
+  const htmlPercentage: number = 90;
+  const cssPercentage: number = 80;
+  const scssPercentage: number = 75;
+  const jsPercentage: number = 60;
+  const bootstrapPercentage: number = 90;
+  const reactPercentage: number = 60;
+  const typscriptPercentage: number = 40;
+  const githubPercentage: number = 80;
+  const tailwindPercentage: number = 80;
+  const nextjsPercentage: number = 40;
+
   return (
     <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
@@ -104,7 +107,7 @@ export const AboutSection = () => {
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
-                <span className="before:content-['--'] text-transparentGray absolute"></span>
+
                 <p className=" pl-11 text-lg">
                   {" "}
                   YEARS OF <span>EXPERIENCE</span>
@@ -115,7 +118,7 @@ export const AboutSection = () => {
                   4
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
-                <span className="before:content-['--'] text-transparentGray absolute"></span>
+
                 <p className=" pl-11 text-lg">
                   {" "}
                   COMPLETED <span>PROJECT</span>
@@ -128,7 +131,7 @@ export const AboutSection = () => {
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
-                <span className="before:content-['--'] text-transparentGray absolute"></span>
+
                 <p className=" pl-11 text-lg">
                   {" "}
                   HAPPY <span>CUSTOMER</span>
@@ -139,7 +142,7 @@ export const AboutSection = () => {
                   2
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
-                <span className="before:content-['--'] text-transparentGray absolute"></span>
+
                 <p className=" pl-11 text-lg">
                   {" "}
                   CERTIFICATE OF <span>ACHIEVEMENT</span>
@@ -151,7 +154,7 @@ export const AboutSection = () => {
         <div className="w-full my-6 px-4 text-tWhite">
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
-            <h2 className="text-4xl font-semibold my-10">My Skills</h2>
+            <h2 className="text-3xl font-semibold my-10">MY SKILLS</h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
             <div className="w-full flex flex-wrap gap-14 mx-auto">
@@ -475,6 +478,33 @@ export const AboutSection = () => {
                   value={0}
                 />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full my-14 px-4 text-tWhite">
+          <div>
+            <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
+            <h2 className="text-3xl font-semibold text-center text-white my-10">
+              EXPERIENCE & EDUCATION
+            </h2>
+          </div>
+          <div className=" w-2/4">
+            <div>
+              <ul className=" list-none m-0 p-0">
+                <li className="relative py-0 pr-5 pl-14 ">
+                  <div className=" w-12 h-12 absolute leading-10 text-center rounded-full bg-mainColor">
+                    <FontAwesomeIcon icon={faBriefcase} size="xs" className=" my-3"/>
+                  </div>
+                  <span>2018 - Present</span>
+                  <h5>
+                    Web Developer at <span>Freelance</span>
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
+                    labore adipisicing elit
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
