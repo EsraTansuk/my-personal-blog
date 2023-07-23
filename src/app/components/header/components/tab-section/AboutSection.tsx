@@ -488,23 +488,160 @@ export const AboutSection = () => {
               EXPERIENCE & EDUCATION
             </h2>
           </div>
-          <div className=" w-2/4">
-            <div>
-              <ul className=" list-none m-0 p-0">
-                <li className="relative py-0 pr-5 pl-14 ">
-                  <div className=" w-12 h-12 absolute leading-10 text-center rounded-full bg-mainColor">
-                    <FontAwesomeIcon icon={faBriefcase} size="xs" className=" my-3"/>
-                  </div>
-                  <span>2018 - Present</span>
-                  <h5>
-                    Web Developer at <span>Freelance</span>
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
-                    labore adipisicing elit
-                  </p>
-                </li>
-              </ul>
+          <div className="w-full flex flex-col lg:flex-row">
+            <div className=" lg:w-2/4 w-full px-4">
+              <div className=" box-border">
+                <ul className=" list-none m-0 p-0 block">
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-base m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-sm m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-sm m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className=" lg:w-2/4 w-full px-4">
+              <div className=" box-border">
+                <ul className=" list-none m-0 p-0 block">
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-sm m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-sm m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        size="xs"
+                        className=" my-3"
+                      />
+                    </div>
+                    <span className=" text-tWhite text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-borderColor opacity-80">
+                      2018 - PRESENT
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      WEB DEVELOPER{" "}
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        ENVATO
+                      </span>
+                    </h5>
+                    <p className="text-lGray text-sm m-0">
+                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
+                      ut labore adipisicing elit
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
