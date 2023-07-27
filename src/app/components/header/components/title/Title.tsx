@@ -19,10 +19,10 @@ export const Title: React.FC<TitleProps> = ({ titleOne, titleTwo, titleBackgroun
     }
 
     )}>
-      <h1 className="font-black text-6xl m-0 text-tWhite">
+      <h1 className="font-black text-6xl m-0 text-textLight dark:text-tWhite">
         {titleOne} <span className=" text-mainColor">{titleTwo}</span>
       </h1>
-      <span className="absolute text-9xl tracking-wider text-center font-black text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
+      <span className="absolute text-9xl tracking-wider text-center font-black text-titleLight dark:text-transparentGray top-[50%] -translate-x-[50%] -translate-y-[50%] ">
         {titleBackground}
       </span>
     </div>

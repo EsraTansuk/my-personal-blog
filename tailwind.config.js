@@ -45,6 +45,7 @@ module.exports = {
         tWhite: "#fff",
         lGray: "#eee",
         textLight:"#666",
+        titleLight:"rgba(30,37,48,.07)",
       },
     },
   },
