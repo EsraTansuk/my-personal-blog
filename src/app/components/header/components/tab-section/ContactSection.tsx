@@ -20,7 +20,7 @@ export const ContactSection = () => {
                 titleBackground="CONTACT"
               />
               <div className="flex flex-col  lg:flex-row justify-between items-center gap-12 mt-7 mb-20">
-                <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5">
+                <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5 text-textLight dark:text-tWhite">
                   <h3 className=" text-3xl pb-4 font-medium">DON'T BE SHY!</h3>
                   <p className=" mb-6 text-base">
                     Feel free to get in touch with me. I am always open to
@@ -32,7 +32,7 @@ export const ContactSection = () => {
                       icon={faMapMarkerAlt}
                       className="mr-4 left-0 top-2 text-5xl text-mainColor absolute pl-2"
                     />
-                    <span className=" font-normal opacity-50 pb-0 text-lg block text-amber-50">
+                    <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       ADDRESS POINT
                     </span>
                     123 Stree New York City , United States Of America 750065.
@@ -42,7 +42,7 @@ export const ContactSection = () => {
                       icon={faEnvelopeOpen}
                       className="mr-4 left-0 top-2 text-5xl text-mainColor absolute"
                     />
-                    <span className=" font-normal opacity-50 pb-0 text-lg block text-amber-50">
+                    <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       MAIL ME
                     </span>
                     <a href="mailto:esra.tansuk@gmail.com">
@@ -54,7 +54,7 @@ export const ContactSection = () => {
                       icon={faSquarePhoneFlip}
                       className="mr-4 left-0 top-2 text-5xl text-mainColor absolute"
                     />
-                    <span className=" font-normal opacity-50 pb-0 text-lg block text-amber-50">
+                    <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       CALL ME
                     </span>
                     <a href="tel:+905323456789">+90 532 345 67 89</a>
@@ -64,7 +64,7 @@ export const ContactSection = () => {
                     <li className=" inline-block ">
                       <a
                         href="https://www.facebook.com/"
-                        className=" inline-block h-11 w-11 pt-2 text-center text-white text-2xl my-0  bg-iconBgColor rounded-full hover:bg-mainColor"
+                        className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faFacebookF} />
                       </a>
@@ -72,7 +72,7 @@ export const ContactSection = () => {
                     <li className=" inline-block ">
                       <a
                         href="https://www.twitter.com/"
-                        className=" inline-block h-11 w-11 pt-2 text-center text-white text-2xl my-0  bg-iconBgColor rounded-full hover:bg-mainColor"
+                        className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
                       </a>
@@ -80,7 +80,7 @@ export const ContactSection = () => {
                     <li className=" inline-block ">
                       <a
                         href="https://www.instagram.com/"
-                        className=" inline-block  h-11 w-11 pt-2 text-center text-white text-2xl my-0  bg-iconBgColor rounded-full hover:bg-mainColor"
+                        className=" inline-block  h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faInstagram} />
                       </a>
@@ -88,7 +88,7 @@ export const ContactSection = () => {
                     <li className=" inline-block ">
                       <a
                         href="https://www.linkedin.com/"
-                        className=" inline-block h-11 w-11 pt-2 text-center text-white text-2xl my-0  bg-iconBgColor rounded-full hover:bg-mainColor"
+                        className=" inline-block h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faLinkedinIn} />
                       </a>
@@ -96,7 +96,7 @@ export const ContactSection = () => {
                     <li className=" inline-block ">
                       <a
                         href="https://www.github.com/"
-                        className=" inline-block  h-11 w-11 pt-2 text-center text-white text-2xl my-0  bg-iconBgColor rounded-full hover:bg-mainColor"
+                        className=" inline-block  h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>
@@ -109,12 +109,12 @@ export const ContactSection = () => {
                       <input
                         type="text"
                         placeholder="YOUR NAME"
-                        className="w-full mb-4 py-3 px-6 border text-lg outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor bg-borderColor border-bodyDarkColor rounded-full"
+                        className="w-full mb-4 py-3 px-6 border text-lg outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
                       />
                       <input
                         type="email"
                         placeholder="YOUR EMAIL"
-                        className="w-full outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
+                        className="w-full outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-3 px-6 border text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
                       />
                     </div>
 
@@ -122,18 +122,18 @@ export const ContactSection = () => {
                       type="text"
                       name="subject"
                       placeholder="YOUR SUBJECT"
-                      className="mb-4 outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-full"
+                      className="mb-4 outline outline-2 dark:outline-bodyDarkColor  focus-visible:outline-mainColor py-3 px-6 border text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
                     />
                     <textarea
                       name="message"
                       id="message"
                       placeholder="YOUR MESSAGE"
-                      className="mb-4 outline outline-2 outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-lg bg-borderColor border-bodyDarkColor rounded-3xl h-52"
+                      className="mb-4 outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-3xl h-52"
                     ></textarea>
 
                     <div className="mt-3">
                       <button className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[85px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
-                        <span className="relative">SEND MESSAGE</span>
+                        <span className="relative text-textLight dark:text-tWhite ">SEND MESSAGE</span>
                         <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[165px] absolute">
                           <FontAwesomeIcon
                             icon={faPaperPlane}

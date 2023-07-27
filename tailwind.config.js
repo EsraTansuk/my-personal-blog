@@ -46,6 +46,7 @@ module.exports = {
         lGray: "#eee",
         textLight:"#666",
         titleLight:"rgba(30,37,48,.07)",
+        backColor: "#4b4b4b",
       },
     },
   },

@@ -34,13 +34,13 @@ export const BlogItem: React.FC<BlogItemProps> = ({
               alt={alt}
               width={895}
               height={552}
-              className="absolute top-0 left-0 w-full h-full rounded-lg group-hover:scale-110"
+              className="absolute top-0 left-0 w-full h-full  group-hover:scale-110"
             />
           </div>
         </div>
-        <div className=" bg-borderColor text-tWhite pt-5 px-6 pb-6 rounded-b-md">
+        <div className=" bg-lGray dark:bg-borderColor text-textLight dark:text-tWhite pt-5 px-6 pb-6 rounded-b-md">
           <div className=" box-border">
-            <h3 className=" text-tWhite hover:text-mainColor  group-hover:text-mainColor text-2xl font-semibold transition-all duration-300 ease-in-out delay-0">
+            <h3 className=" text-textLight dark:text-tWhite hover:text-mainColor  group-hover:text-mainColor text-2xl font-semibold transition-all duration-300 ease-in-out delay-0">
               {title}
             </h3>
           </div>
