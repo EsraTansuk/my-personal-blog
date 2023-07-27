@@ -1,4 +1,4 @@
-import { IconDefinition, faHouse } from '@fortawesome/free-solid-svg-icons'
+import { IconDefinition} from '@fortawesome/free-solid-svg-icons'
 import React, { PropsWithChildren } from 'react'
 
 interface TabProps extends PropsWithChildren {
