@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
   faComments,
@@ -14,7 +13,7 @@ import { Tab } from "../tabItem/Tab";
 import { AboutSection, BlogSection, ContactSection, HomeSection, PortfolioSection } from "./components/tab-section";
 
 
-export const Header: React.FC = () => {
+export const Pages: React.FC = () => {
   return (
     <div className=" text-white w-full flex h-screen">
       <Tabs>

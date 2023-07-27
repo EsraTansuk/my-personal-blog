@@ -1,10 +1,10 @@
 import React from "react";
-import { Header } from "../header";
+import { Pages } from "../header";
 
 export const HomePage = () => {
   return (
     <div className="text-3xl text-white w-full">
-      <Header/>
+      <Pages/>
     </div>
   );
 };
