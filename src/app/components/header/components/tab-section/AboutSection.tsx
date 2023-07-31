@@ -45,7 +45,7 @@ export const AboutSection = () => {
                   <span className="opacity-70">Age :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    24
+                    29
                   </span>
                 </li>
                 <li className="pb-5 w-2/4">
@@ -80,7 +80,7 @@ export const AboutSection = () => {
                   <span className="opacity-70">Email :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    esra.balkis@outlook.com
+                    esra.tansuk@gmail.com
                   </span>
                 </li>
                 <li className="pb-5 w-2/4">
