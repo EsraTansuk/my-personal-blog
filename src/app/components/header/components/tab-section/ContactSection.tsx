@@ -57,7 +57,7 @@ export const ContactSection = () => {
                     <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       CALL ME
                     </span>
-                    <a href="tel:+905323456789">+90 553 548 35 34</a>
+                    <a href="tel:+905323456789">+90 555 555 55 55</a>
                   </p>
 
                   <ul className="flex flex-row gap-4 text-xl pt-4 -ml-1">
