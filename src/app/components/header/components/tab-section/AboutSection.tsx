@@ -497,7 +497,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
@@ -521,7 +521,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
@@ -545,7 +545,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
@@ -574,7 +574,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
@@ -598,7 +598,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
@@ -622,7 +622,7 @@ export const AboutSection = () => {
                       <FontAwesomeIcon
                         icon={faBriefcase}
                         size="xs"
-                        className=" my-3 dark:text-textLight text-lGray"
+                        className=" my-3 text-lGray"
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">

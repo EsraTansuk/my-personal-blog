@@ -8,7 +8,7 @@ export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="right-9 pt-7 z-50">
+    <div className="right-9 pt-7 z-50 absolute">
       { theme === "dark" && <button className="text-lGray bg-backColor w-14 h-14 rounded-full pt-1" onClick={() => setTheme("light")}>
         <FontAwesomeIcon icon={faSun} />
       </button>}
