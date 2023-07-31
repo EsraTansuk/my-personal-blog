@@ -32,19 +32,26 @@ export const HomeSection = () => {
           <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left md:px-12 lg:px-20 2xl:px-48 mb-10">
             <h1 className=" text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
               I'm Esra Tansuk. <br />
-              <span className="dark:text-white text-textLight my-4">Frontend Developer</span>
+              <span className="dark:text-white text-textLight my-4">
+                Frontend Developer
+              </span>
             </h1>
             <p className=" mt-4 mb-7 leading-8 text-lg dark:text-white text-textLight">
-              I'm a Tunisian based web designer & front‑end developer focused on
-              crafting clean & user‑friendly experiences, I am passionate about
-              building excellent software that improves the lives of those
-              around me.
+              Hello, I'm Esra, a frontend developer with a year's
+              experience in web development. I have strong skills in HTML, CSS,
+              JavaScript, along with expertise in responsive design frameworks
+              like Bootstrap and Tailwind. I have hands-on experience in React
+              and Next.js for building dynamic web apps, and use TypeScript for
+              improved code reliability. Passionate and self-driven, I always
+              strive to stay updated with the latest trends in my field.
             </p>
             <button
               className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
               onClick={() => openModal()}
             >
-              <span className="relative dark:text-white text-textLight">MORE ABOUT ME</span>
+              <span className="relative dark:text-white text-textLight">
+                MORE ABOUT ME
+              </span>
               <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
                 <FontAwesomeIcon
                   icon={faRightLong}
@@ -56,7 +63,6 @@ export const HomeSection = () => {
               isOpen={isOpen}
               onClose={closeModal}
               className="about-page-modal force-overflow large-2 "
-              
             >
               <div style={aboutPageModalStyle}>
                 <button

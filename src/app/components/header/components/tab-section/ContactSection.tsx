@@ -35,7 +35,7 @@ export const ContactSection = () => {
                     <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       ADDRESS POINT
                     </span>
-                    123 Stree New York City , United States Of America 750065.
+                    Yenimahalle/ Ankara
                   </p>
                   <p className=" font-medium leading-7 pt-1 mb-5 text-base pl-16 relative">
                     <FontAwesomeIcon
@@ -57,13 +57,13 @@ export const ContactSection = () => {
                     <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
                       CALL ME
                     </span>
-                    <a href="tel:+905323456789">+90 532 345 67 89</a>
+                    <a href="tel:+905323456789">+90 553 548 35 34</a>
                   </p>
 
                   <ul className="flex flex-row gap-4 text-xl pt-4 -ml-1">
                     <li className=" inline-block ">
                       <a
-                        href="https://www.facebook.com/"
+                        href="https://www.facebook.com/esra.blks/"
                         className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faFacebookF} />
@@ -71,7 +71,7 @@ export const ContactSection = () => {
                     </li>
                     <li className=" inline-block ">
                       <a
-                        href="https://www.twitter.com/"
+                        href="https://twitter.com/EsraTansuk"
                         className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
@@ -79,7 +79,7 @@ export const ContactSection = () => {
                     </li>
                     <li className=" inline-block ">
                       <a
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/esra.she/"
                         className=" inline-block  h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faInstagram} />
@@ -87,7 +87,7 @@ export const ContactSection = () => {
                     </li>
                     <li className=" inline-block ">
                       <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/in/esra-tansuk-9313a6211/"
                         className=" inline-block h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faLinkedinIn} />
@@ -95,7 +95,7 @@ export const ContactSection = () => {
                     </li>
                     <li className=" inline-block ">
                       <a
-                        href="https://www.github.com/"
+                        href="https://github.com/EsraTansuk"
                         className=" inline-block  h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                       >
                         <FontAwesomeIcon icon={faGithub} />

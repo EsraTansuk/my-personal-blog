@@ -6,16 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 export const AboutSection = () => {
-  const htmlPercentage: number = 90;
+  const htmlPercentage: number = 80;
   const cssPercentage: number = 80;
-  const scssPercentage: number = 75;
+  const scssPercentage: number = 80;
   const jsPercentage: number = 60;
-  const bootstrapPercentage: number = 90;
-  const reactPercentage: number = 60;
-  const typscriptPercentage: number = 40;
-  const githubPercentage: number = 80;
+  const bootstrapPercentage: number = 85;
+  const reactPercentage: number = 70;
+  const typscriptPercentage: number = 50;
+  const githubPercentage: number = 75;
   const tailwindPercentage: number = 80;
-  const nextjsPercentage: number = 40;
+  const nextjsPercentage: number = 55;
 
   return (
     <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
@@ -151,7 +151,7 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
-        {/* <div className="w-full my-6 px-4 text-textLight dark:text-tWhite">
+        <div className="w-full my-6 px-4 text-textLight dark:text-tWhite">
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-3xl font-semibold my-10">MY SKILLS</h2>
@@ -480,7 +480,7 @@ export const AboutSection = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className="w-full my-14 px-4 text-textLight dark:text-tWhite">
           <div>
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
@@ -501,18 +501,17 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2023 - PRESENT
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
+                      Frontend Developer Intern
                       <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
                         {" "}
-                        ENVATO
+                        POINTO
                       </span>
                     </h5>
                     <p className="text-textLight dark:text-lGray text-base m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
+                      I am working as a Frontend Developer Intern at Pointo. 
                     </p>
                   </li>
 
