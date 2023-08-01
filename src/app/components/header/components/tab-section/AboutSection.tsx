@@ -103,48 +103,48 @@ export const AboutSection = () => {
           </div>
           <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4 text-textLight dark:text-tWhite">
             <div className="w-full gap-10 flex flex-row ">
-              <div className=" w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-6xl relative w-6">
+              <div className=" w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
-                <p className=" pl-11 text-lg">
+                <p className=" pl-11 text-base md:text-lg">
                   {" "}
                   YEARS OF <span>EXPERIENCE</span>
                 </p>
               </div>
-              <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-6xl relative w-10">
+              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
                   4
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
-                <p className=" pl-11 text-lg">
+                <p className=" pl-11 text-base md:text-lg ">
                   {" "}
                   COMPLETED <span>PROJECT</span>
                 </p>
               </div>
             </div>
             <div className="w-full gap-10 flex flex-row ">
-              <div className="w-1/2 mb-8 pt-5 pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-6xl relative w-6">
+              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
-                <p className=" pl-11 text-lg">
+                <p className=" pl-11 text-base md:text-lg">
                   {" "}
                   HAPPY <span>CUSTOMER</span>
                 </p>
               </div>
               <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-6xl relative w-10">
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
                   2
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
-                <p className=" pl-11 text-lg">
+                <p className=" pl-11 text-base md:text-lg">
                   {" "}
                   CERTIFICATE OF <span>ACHIEVEMENT</span>
                 </p>
@@ -158,7 +158,7 @@ export const AboutSection = () => {
             <h2 className="text-3xl font-semibold my-10">MY SKILLS</h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
-            <div className="w-full flex flex-wrap gap-14 mx-auto">
+            <div className="w-full flex flex-wrap gap-14 mx-auto items-center justify-center">
               <div className="px-8">
                 <Progressbar
                   percentage={htmlPercentage}

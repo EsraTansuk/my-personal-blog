@@ -19,7 +19,7 @@ export const HomeSection = () => {
     <>
       <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
       <div className="z-10 px-10 py-10 align-middle w-full">
-        <div className="flex flex-col lg:flex-row w-full items-center">
+        <div className="flex flex-col pb-10 lg:flex-row w-full items-center">
           <div
             className="items-center w-72 h-72 border-4 border-greyBg lg:border-none lg:w-2/6 lg:h-calc-vh bg-[url('/img/my-photo.jpeg')] rounded-full lg:rounded-3xl"
             style={{
