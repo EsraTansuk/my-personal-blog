@@ -4,6 +4,7 @@ import { Progressbar } from "../progressbar";
 import { Title } from "../title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export const AboutSection = () => {
   const htmlPercentage: number = 80;
@@ -29,18 +30,18 @@ export const AboutSection = () => {
             <div className="w-full">
               <ul className="text-base flex flex-wrap text-textLight dark:text-tWhite">
                 <li className="pb-5 w-2/4 ">
-                  <span className="opacity-70 ">First Name :</span>
+                  <span className="opacity-70 ">Full Name :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                    Esra
+                    Esra Tansuk
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                {/* <li className="pb-5 w-2/4">
                   <span className="opacity-70">Last Name :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     Tansuk
                   </span>
-                </li>
+                </li> */}
                 <li className="pb-5 w-2/4">
                   <span className="opacity-70">Age :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
@@ -69,13 +70,13 @@ export const AboutSection = () => {
                     Ankara, Turkey
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                {/* <li className="pb-5 w-2/4">
                   <span className="opacity-70">Phone :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     +90 555 555 55 55
                   </span>
-                </li>
+                </li> */}
                 <li className="pb-5 w-2/4">
                   <span className="opacity-70">Email :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
@@ -84,11 +85,11 @@ export const AboutSection = () => {
                   </span>
                 </li>
                 <li className="pb-5 w-2/4">
-                  <span className="opacity-70">GitHub Name :</span>
-                  <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                  <span className="opacity-70">GitHub Profile :</span>
+                  <Link href="https://github.com/EsraTansuk" target="_blank" className=" hover:underline font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     EsraTansuk
-                  </span>
+                  </Link>
                 </li>
                 <li className="pb-5 w-2/4">
                   <span className="opacity-70">Languages :</span>

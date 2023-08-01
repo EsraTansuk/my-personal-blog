@@ -1,4 +1,4 @@
-import { IconDefinition} from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import classNames from "classnames";
@@ -10,9 +10,14 @@ type Props = {
   setSelectedTab: (index: number) => void;
 };
 
-export const TabTitle: React.FC<Props> = ({ icon, setSelectedTab, index, title }) => {
+export const TabTitle: React.FC<Props> = ({
+  icon,
+  setSelectedTab,
+  index,
+  title,
+}) => {
   const [displayShowMore, setDisplayShowMore] = useState(false);
-  
+
   const showMoreClass = classNames(
     " hidden lg:flex absolute top-0 -right-4 rounded-3xl -z-10 bg-mainColor pr-16 pl-7 h-14 flex items-center opacity-0 text-lg font-medium transition-transform",
     {
@@ -32,9 +37,7 @@ export const TabTitle: React.FC<Props> = ({ icon, setSelectedTab, index, title }
       >
         <button className=" pl-[1px]" onClick={() => setSelectedTab(index)}>
           <FontAwesomeIcon icon={icon} style={{ width: "21px" }} />
-          <h2 className={showMoreClass}>
-            {title}
-          </h2>
+          <h2 className={showMoreClass}>{title}</h2>
         </button>
       </li>
     </>

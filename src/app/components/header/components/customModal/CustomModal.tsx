@@ -41,7 +41,7 @@ export const CustomModal: FC<CustomModalProps> = ({
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle!.style.color = "#f00";
+    if (subtitle) subtitle.style.color = "#f00";
   }
 
   return (

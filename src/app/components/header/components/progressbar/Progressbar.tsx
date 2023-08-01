@@ -1,3 +1,5 @@
+import { color } from "framer-motion";
+import { useTheme } from "next-themes";
 import React from "react";
 import {
   CircularProgressbarWithChildren,
@@ -20,13 +22,20 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
   textColor,
   text,
 }) => {
+  const { theme } = useTheme();
+
   return (
     <>
       <CircularProgressbarWithChildren
         value={percentage}
         text={`${percentage}%`}
         styles={{
-          root: {width: 140, height: 140, margin: "auto", position: "relative"},
+          root: {
+            width: 140,
+            height: 140,
+            margin: "auto",
+            position: "relative",
+          },
           path: {
             stroke: `rgba(255, 180, 0)`,
             strokeLinecap: "round",
@@ -42,10 +51,10 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
             transformOrigin: "center center",
           },
           text: {
-            fill: textColor,
+            fill: theme == "dark" ? textColor : "#666",
             fontSize: "16px",
             textAnchor: "middle",
-            alignmentBaseline: "middle"
+            alignmentBaseline: "middle",
           },
         }}
       >
