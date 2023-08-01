@@ -45,7 +45,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
             strokeWidth: strokeWidth,
           },
           trail: {
-            stroke: trailColor,
+            stroke: theme == "dark" ? trailColor :  `#eee`,
             strokeLinecap: "round",
             transform: "rotate(0.25turn)",
             transformOrigin: "center center",

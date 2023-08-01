@@ -162,7 +162,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={htmlPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -194,7 +194,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={cssPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -226,7 +226,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={scssPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -258,7 +258,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={jsPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -290,7 +290,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={tailwindPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -322,7 +322,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={bootstrapPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -354,7 +354,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={reactPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -386,7 +386,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={typscriptPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -418,7 +418,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={githubPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
@@ -450,7 +450,7 @@ export const AboutSection = () => {
               <div className="px-8">
                 <Progressbar
                   percentage={nextjsPercentage}
-                  strokeWidth={8}
+                  strokeWidth={7}
                   trailColor="#252525"
                   pathColor={`rgba(255, 180, 0`}
                   textColor="#fff"
