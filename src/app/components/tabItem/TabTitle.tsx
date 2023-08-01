@@ -36,7 +36,7 @@ export const TabTitle: React.FC<Props> = ({
         onMouseOut={() => setDisplayShowMore(false)}
       >
         <button className=" pl-[1px]" onClick={() => setSelectedTab(index)}>
-          <FontAwesomeIcon icon={icon} style={{ width: "21px" }} />
+          <FontAwesomeIcon icon={icon} style={{ width: "22px" }} />
           <h2 className={showMoreClass}>{title}</h2>
         </button>
       </li>
