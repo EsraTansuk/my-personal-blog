@@ -37,28 +37,32 @@ export const HomeSection = () => {
               </span>
             </h1>
             <p className=" mt-4 mb-7 leading-8 text-lg dark:text-white text-textLight">
-              Hello, I'm Esra, a frontend developer with a year's
-              experience in web development. I have strong skills in HTML, CSS,
-              JavaScript, along with expertise in responsive design frameworks
-              like Bootstrap and Tailwind. I have hands-on experience in React
-              and Next.js for building dynamic web apps, and use TypeScript for
+              Hello, I'm Esra, a frontend developer with a year's experience in
+              web development. I have strong skills in HTML, CSS, JavaScript,
+              along with expertise in responsive design frameworks like
+              Bootstrap and Tailwind. I have hands-on experience in React and
+              Next.js for building dynamic web apps, and use TypeScript for
               improved code reliability. Passionate and self-driven, I always
               strive to stay updated with the latest trends in my field.
             </p>
-            <button
-              className="border border-solid border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
-              onClick={() => openModal()}
-            >
-              <span className="relative dark:text-white text-textLight">
-                MORE ABOUT ME
-              </span>
-              <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
-                <FontAwesomeIcon
-                  icon={faRightLong}
-                  style={{ width: "50px", height: "30px" }}
-                />
-              </span>
-            </button>
+
+            <div className="group">
+              <button
+                className="border border-solid text-tWhite border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
+                onClick={() => openModal()}
+              >
+                <span className="relative dark:text-tWhite text-textLight group-hover:text-tWhite">
+                  MORE ABOUT ME
+                </span>
+                <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
+                  <FontAwesomeIcon
+                    icon={faRightLong}
+                    style={{ width: "50px", height: "30px" }}
+                  />
+                </span>
+              </button>
+            </div>
+
             <CustomModal
               isOpen={isOpen}
               onClose={closeModal}
