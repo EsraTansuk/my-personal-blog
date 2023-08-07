@@ -37,7 +37,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
             position: "relative",
           },
           path: {
-            stroke: `rgba(255, 180, 0)`,
+            stroke: `#8062D6`,
             strokeLinecap: "round",
             transition: "stroke-dashoffset 0.5s ease 0s",
             transform: "rotate(0 turn)",

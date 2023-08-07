@@ -36,7 +36,7 @@ module.exports = {
       },
       colors: {
         bodyDarkColor: "#111",
-        mainColor: "#ffb400",
+        mainColor: "#8062D6",
         iconBgColor: "#2b2a2a",
         shadow: "0 0 7px rgba(0,0,0,.9)",
         greyBg: "#323232",
