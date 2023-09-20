@@ -25,7 +25,7 @@ const customStyles = {
   },
 };
 
-interface CustomModalProps extends PropsWithChildren {
+interface CustomModalProps extends PropsWithChildren<any> {
   className?: string;
   isOpen: boolean;
   onClose?: () => void;

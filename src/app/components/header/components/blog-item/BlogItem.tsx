@@ -5,7 +5,7 @@ import { useModal } from "../customModal/useModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
-interface BlogItemProps extends PropsWithChildren {
+interface BlogItemProps extends PropsWithChildren<any> {
   title: string;
   text: string;
   src: string;

@@ -15,7 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/node": "20.2.3",
-    "@types/react": "18.2.7",
+    "@types/react": "*",
     "@types/react-dom": "18.2.4",
     "@types/react-fontawesome": "^1.6.5",
     "autoprefixer": "10.4.14",
@@ -36,5 +36,8 @@
   },
   "devDependencies": {
     "@types/react-modal": "^3.16.0"
+  },
+  "resolutions": {
+    "@types/react": "17.0.44"
   }
 }
