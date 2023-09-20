@@ -13,4 +13,8 @@ COPY public ./public
 COPY src ./src
 COPY styles ./styles
 
+EXPOSE 8000
+
+ENV PORT 8000
+
 CMD ["yarn", "dev"]
