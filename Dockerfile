@@ -15,10 +15,8 @@ RUN yarn install
 
 COPY . .
 
-CMD ["yarn", "build"]
-
 EXPOSE 8000
 
 ENV PORT 8000
 
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
