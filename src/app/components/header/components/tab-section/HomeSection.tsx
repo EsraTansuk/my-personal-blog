@@ -14,7 +14,7 @@ export const HomeSection = () => {
       backgroundColor: "#efef",
     },
   };
-  const { isOpen, closeModal, openModal, toggleModal } = useModal();
+  const { isOpen, closeModal, openModal} = useModal();
   return (
     <>
       <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
@@ -30,13 +30,13 @@ export const HomeSection = () => {
             }}
           ></div>
           <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left md:px-12 lg:px-20 2xl:px-48 mb-10">
-            <h1 className=" text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
+            <h1 className="text-4xl md:text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
               I'm Esra Tansuk. <br />
               <span className="dark:text-white text-textLight my-4">
                 Frontend Developer
               </span>
             </h1>
-            <p className=" mt-4 mb-7 leading-8 text-lg dark:text-white text-textLight">
+            <p className=" mt-4 mb-7 leading-7 md:leading-8 text-base md:text-lg dark:text-white text-textLight">
               Hello, I'm Esra, a frontend developer with a year's experience in
               web development. I have strong skills in HTML, CSS, JavaScript,
               along with expertise in responsive design frameworks like
@@ -48,13 +48,13 @@ export const HomeSection = () => {
 
             <div className="group">
               <button
-                className="border border-solid text-tWhite border-mainColor rounded-full text-lg font-semibold ps-[35px] pe-[70px] py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
+                className="border border-solid text-tWhite border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[70px] py-[10px] md:py-[16px]  relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
                 onClick={() => openModal()}
               >
                 <span className="relative dark:text-tWhite text-textLight group-hover:text-tWhite">
                   MORE ABOUT ME
                 </span>
-                <span className="rounded-full bg-mainColor w-[56px] h-[56px] flex justify-center items-center -mt-10 ml-[163px] absolute">
+                <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-10 ml-[141px] md:ml-[163px] absolute">
                   <FontAwesomeIcon
                     icon={faRightLong}
                     style={{ width: "50px", height: "30px" }}

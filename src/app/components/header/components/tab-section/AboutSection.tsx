@@ -24,12 +24,12 @@ export const AboutSection = () => {
         <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
         <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
           <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
-            <h1 className=" text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-textLight dark:text-tWhite">
+            <h1 className=" text-2xl md:text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-textLight dark:text-tWhite">
               PERSONAL INFOS
             </h1>
             <div className="w-full">
               <ul className="text-base flex flex-wrap text-textLight dark:text-tWhite">
-                <li className="pb-5 w-2/4 ">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70 ">Full Name :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     Esra Tansuk
@@ -42,28 +42,28 @@ export const AboutSection = () => {
                     Tansuk
                   </span>
                 </li> */}
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Age :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     29
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                <li className="md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Nationality :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     Turkey
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Freelance :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     Available
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Address :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
@@ -77,21 +77,21 @@ export const AboutSection = () => {
                     +90 555 555 55 55
                   </span>
                 </li> */}
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Email :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     esra.tansuk@gmail.com
                   </span>
                 </li>
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">GitHub Profile :</span>
                   <Link href="https://github.com/EsraTansuk" target="_blank" className=" hover:underline font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     EsraTansuk
                   </Link>
                 </li>
-                <li className="pb-5 w-2/4">
+                <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">Languages :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
@@ -102,8 +102,8 @@ export const AboutSection = () => {
             </div>
           </div>
           <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4 text-textLight dark:text-tWhite">
-            <div className="w-full gap-10 flex flex-row ">
-              <div className=" w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+            <div className="w-full gap-2 md:gap-10 flex flex-row ">
+              <div className=" w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-4 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -114,7 +114,7 @@ export const AboutSection = () => {
                   YEARS OF <span>EXPERIENCE</span>
                 </p>
               </div>
-              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
                   4
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -126,8 +126,8 @@ export const AboutSection = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full gap-10 flex flex-row ">
-              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+            <div className="w-full gap-2 md:gap-10 flex flex-row ">
+              <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
                   1
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -138,7 +138,7 @@ export const AboutSection = () => {
                   HAPPY <span>CUSTOMER</span>
                 </p>
               </div>
-              <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-12 border divide-solid dark:border-borderColor rounded-md ">
+              <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
                   2
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
@@ -155,7 +155,7 @@ export const AboutSection = () => {
         <div className="w-full my-6 px-4 text-textLight dark:text-tWhite">
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
-            <h2 className="text-3xl font-semibold my-10">MY SKILLS</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold my-10">MY SKILLS</h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
             <div className="w-full flex flex-wrap gap-14 mx-auto items-center justify-center">
@@ -485,7 +485,7 @@ export const AboutSection = () => {
         <div className="w-full my-14 px-4 text-textLight dark:text-tWhite">
           <div>
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
-            <h2 className="text-3xl font-semibold text-center text-textLight dark:text-tWhite my-10">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center text-textLight dark:text-tWhite my-10">
               EXPERIENCE & EDUCATION
             </h2>
           </div>

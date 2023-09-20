@@ -40,12 +40,12 @@ export const BlogItem: React.FC<BlogItemProps> = ({
         </div>
         <div className=" bg-lGray dark:bg-borderColor text-textLight dark:text-tWhite pt-5 px-6 pb-6 rounded-b-md">
           <div className=" box-border">
-            <h3 className=" text-textLight dark:text-tWhite hover:text-mainColor  group-hover:text-mainColor text-2xl font-semibold transition-all duration-300 ease-in-out delay-0">
+            <h3 className=" text-textLight dark:text-tWhite hover:text-mainColor  group-hover:text-mainColor text-xl md:text-2xl font-semibold transition-all duration-300 ease-in-out delay-0">
               {title}
             </h3>
           </div>
           <div>
-            <p className=" mt-4 mx-0 mb-1 text-base">{text}</p>
+            <p className=" mt-4 mx-0 mb-1 text-sm md:text-base">{text}</p>
           </div>
         </div>
       </div>
