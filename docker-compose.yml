@@ -5,7 +5,7 @@ services:
     image: foxy-personal-blog
     container_name: foxy-personal-blog-container
     ports:
-      - "3000:3000"
+      - "8000:8000"
     restart: always
     build:
       context: .
