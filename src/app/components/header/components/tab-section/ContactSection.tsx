@@ -136,11 +136,11 @@ export const ContactSection = () => {
               ></textarea>
 
               <div className="mt-3">
-                <button className="border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[16px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
+                <button className="border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
                   <span className="relative text-textLight dark:text-tWhite ">
                     SEND MESSAGE
                   </span>
-                  <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-10 ml-[135px] md:ml-[165px] absolute">
+                  <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute">
                     <FontAwesomeIcon
                       icon={faPaperPlane}
                       style={{ width: "46px", height: "28px" }}

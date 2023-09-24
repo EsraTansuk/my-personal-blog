@@ -48,13 +48,13 @@ export const HomeSection = () => {
 
             <div className="group">
               <button
-                className="border border-solid text-tWhite border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[70px] py-[10px] md:py-[16px]  relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
+                className="border border-solid text-tWhite border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[70px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out"
                 onClick={() => openModal()}
               >
                 <span className="relative dark:text-tWhite text-textLight group-hover:text-tWhite">
                   MORE ABOUT ME
                 </span>
-                <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-10 ml-[141px] md:ml-[163px] absolute">
+                <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[141px] md:ml-[162px] absolute">
                   <FontAwesomeIcon
                     icon={faRightLong}
                     style={{ width: "50px", height: "30px" }}
@@ -66,11 +66,11 @@ export const HomeSection = () => {
             <CustomModal
               isOpen={isOpen}
               onClose={closeModal}
-              className="about-page-modal force-overflow large-2 "
+              className="about-page-modal mx-2 force-overflow large-2 "
             >
               <div style={aboutPageModalStyle}>
                 <button
-                  className=" flex z-50 ml-[1340px] mb-2 mt-4"
+                  className=" flex z-50 ml-5 mb-2 mt-4"
                   onClick={closeModal}
                 >
                   <FontAwesomeIcon
