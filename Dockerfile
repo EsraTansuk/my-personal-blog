@@ -13,10 +13,12 @@ RUN yarn install
 # COPY src ./src
 # COPY styles ./styles
 
+RUN yarn build
+
 COPY . .
 
 EXPOSE 8000
 
 ENV PORT 8000
 
-CMD ["yarn", "dev"]
+CMD ["yarn", "start"]
