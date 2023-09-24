@@ -22,7 +22,9 @@ export const ContactSection = () => {
         <Title titleOne="GET IN" titleTwo="TOUCH" titleBackground="CONTACT" />
         <div className="flex flex-col  lg:flex-row justify-between items-center gap-12 mt-7 mb-20">
           <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5 text-textLight dark:text-tWhite">
-            <h3 className="text-2xl md:text-3xl pb-4 font-medium">DON'T BE SHY!</h3>
+            <h3 className="text-2xl md:text-3xl pb-4 font-medium">
+              DON'T BE SHY!
+            </h3>
             <p className=" mb-6 text-sm md:text-base">
               Feel free to get in touch with me. I am always open to discussing
               new projects, creative ideas or opportunities to be part of your
@@ -113,12 +115,12 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   placeholder="YOUR NAME"
-                  className="w-full mb-4 py-3 px-6 border text-sm md:text-lg outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
+                  className="w-full mb-4 py-3 text-bodyDarkColor px-6 border text-sm md:text-lg outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
                 />
                 <input
                   type="email"
                   placeholder="YOUR EMAIL"
-                  className="w-full outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
+                  className="w-full outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
                 />
               </div>
 
@@ -126,18 +128,18 @@ export const ContactSection = () => {
                 type="text"
                 name="subject"
                 placeholder="YOUR SUBJECT"
-                className="mb-4 outline outline-2 dark:outline-bodyDarkColor  focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-full"
+                className="mb-4 outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor  focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
               />
               <textarea
                 name="message"
                 id="message"
                 placeholder="YOUR MESSAGE"
-                className="mb-4 outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor rounded-3xl h-36 md:h-52"
+                className="mb-4 outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-3xl h-36 md:h-52"
               ></textarea>
 
-              <div className="mt-3">
-                <button className="border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
-                  <span className="relative text-textLight dark:text-tWhite ">
+              <div className="mt-3 group">
+                <button className="border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:text-tWhite hover:bg-mainColor transition duration-300 ease-in-out">
+                  <span className="relative text-textLight dark:text-tWhite group-hover:text-tWhite">
                     SEND MESSAGE
                   </span>
                   <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute">
