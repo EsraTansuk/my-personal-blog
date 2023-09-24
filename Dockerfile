@@ -17,7 +17,7 @@ COPY styles ./styles
 
 RUN yarn build
 
-COPY .next ./.next
+COPY . .
 
 EXPOSE 8000
 
