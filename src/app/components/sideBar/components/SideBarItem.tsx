@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import { useRouter } from "next/navigation";
 
-type TabTitleProps = {
+type SideBarItemProps = {
   title: string;
   icon: IconDefinition;
   index: number;
@@ -14,7 +14,7 @@ type TabTitleProps = {
   setSelectedTab: (index: number) => void;
 };
 
-export const TabTitle: React.FC<TabTitleProps> = ({
+export const SideBarItem: React.FC<SideBarItemProps> = ({
   icon,
   setSelectedTab,
   index,

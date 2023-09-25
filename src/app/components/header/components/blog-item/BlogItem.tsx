@@ -1,3 +1,4 @@
+'use client'
 import React, { PropsWithChildren } from "react";
 import Image from "next/image";
 import { CustomModal } from "../customModal";

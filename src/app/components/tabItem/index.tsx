@@ -1,3 +1,3 @@
 export * from './Tab'
-export * from './TabTitle'
+export * from '../sideBar/components/SideBarItem'
 export * from './Tabs'

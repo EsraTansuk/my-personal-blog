@@ -1,6 +1,5 @@
 import "../../styles/global.css";
 import { HomeSection } from "./components/header/components/tab-section";
-import { HomePage } from "./components/home";
 import { Metadata } from "next";
 import { SideBar } from "./components/sideBar";
 

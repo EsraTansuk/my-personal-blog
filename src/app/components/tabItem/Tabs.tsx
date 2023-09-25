@@ -1,6 +1,6 @@
 "use client";
 import React, { ReactElement, useState } from "react";
-import { TabTitle } from "./TabTitle";
+import { TabTitle } from "../sideBar/components/SideBarItem";
 
 type Props = {
   children: ReactElement[];

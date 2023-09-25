@@ -142,7 +142,7 @@ export const ContactSection = () => {
                   <span className="relative text-textLight dark:text-tWhite group-hover:text-tWhite">
                     SEND MESSAGE
                   </span>
-                  <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute">
+                  <span className="rounded-full text-tWhite bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute">
                     <FontAwesomeIcon
                       icon={faPaperPlane}
                       style={{ width: "46px", height: "28px" }}
