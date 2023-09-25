@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 
 // Write me a useModal hook with the following functionality:

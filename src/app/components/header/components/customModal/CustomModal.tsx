@@ -1,3 +1,5 @@
+"use client";
+
 // React Imports
 import React, { FC, PropsWithChildren } from "react";
 

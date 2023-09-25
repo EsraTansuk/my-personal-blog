@@ -1,5 +1,6 @@
+"use client";
+
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
 import { Progressbar } from "../progressbar";
 import { Title } from "../title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -86,7 +87,11 @@ export const AboutSection = () => {
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
                   <span className="opacity-70">GitHub Profile :</span>
-                  <Link href="https://github.com/EsraTansuk" target="_blank" className=" hover:underline font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
+                  <Link
+                    href="https://github.com/EsraTansuk"
+                    target="_blank"
+                    className=" hover:underline font-semibold md:block md:ps-0 lg:inline-block lg:ps-2"
+                  >
                     {" "}
                     EsraTansuk
                   </Link>
@@ -155,7 +160,9 @@ export const AboutSection = () => {
         <div className="w-full my-6 px-4 text-textLight dark:text-tWhite">
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
-            <h2 className="text-2xl md:text-3xl font-semibold my-10">MY SKILLS</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold my-10">
+              MY SKILLS
+            </h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
             <div className="w-full flex flex-wrap gap-14 mx-auto items-center justify-center">
@@ -511,7 +518,7 @@ export const AboutSection = () => {
                       </span>
                     </h5>
                     <p className="text-textLight dark:text-lGray text-base m-0">
-                      I am working as a Frontend Developer Intern at Pointo. 
+                      I am working as a Frontend Developer Intern at Pointo.
                     </p>
                   </li>
 

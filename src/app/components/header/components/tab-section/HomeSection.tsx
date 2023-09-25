@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { useModal } from "../customModal/useModal";
@@ -14,7 +15,7 @@ export const HomeSection = () => {
       backgroundColor: "#efef",
     },
   };
-  const { isOpen, closeModal, openModal} = useModal();
+  const { isOpen, closeModal, openModal } = useModal();
   return (
     <>
       <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>

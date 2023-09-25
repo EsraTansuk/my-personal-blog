@@ -12,13 +12,15 @@ export const Tabs: React.FC<Props> = ({ children }) => {
   return (
     <>
       {children[selectedTab]}
+
       <ul className="text-3xl w-full text-textLight dark:text-tWhite flex flex-row border-x-fuchsia-50 border-t-2 dark:border-t-0 shadow-shadowColor  shadow-2xl lg:shadow-none lg:flex-col lg:w-20 lg:justify-center px-3 lg:px-0 lg:mx-6 bottom-0 bg-tWhite dark:bg-greyBg lg:dark:bg-transparent justify-around lg:h-full fixed right-0 z-10">
-        {children.map((item, index) => (
+        {children?.map((item, index) => (
           <TabTitle
             title={item.props.title}
             key={index}
             icon={item.props.icon}
             index={index}
+            url=""
             setSelectedTab={setSelectedTab}
           />
         ))}

@@ -1,21 +1,27 @@
+"use client";
+
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import classNames from "classnames";
+import { useRouter } from "next/navigation";
 
-type Props = {
+type TabTitleProps = {
   title: string;
   icon: IconDefinition;
   index: number;
+  url: string;
   setSelectedTab: (index: number) => void;
 };
 
-export const TabTitle: React.FC<Props> = ({
+export const TabTitle: React.FC<TabTitleProps> = ({
   icon,
   setSelectedTab,
   index,
+  url,
   title,
 }) => {
+  const { push } = useRouter();
   const [displayShowMore, setDisplayShowMore] = useState(false);
 
   const showMoreClass = classNames(
@@ -33,7 +39,7 @@ export const TabTitle: React.FC<Props> = ({
       className="w-14 h-14 rounded-full bg-lGray dark:bg-iconBgColor dark:hover:bg-mainColor cursor-pointer relative mx-3 lg:my-3 px-4 py-3 hover:bg-mainColor hover:text-tWhite"
       onMouseOver={() => setDisplayShowMore(true)}
       onMouseOut={() => setDisplayShowMore(false)}
-      onClick={() => setSelectedTab(index)}
+      onClick={() => (url === "" ? setSelectedTab(index) : push(url))}
     >
       <button className=" pl-[1px]">
         <FontAwesomeIcon icon={icon} style={{ width: "22px" }} />
