@@ -71,7 +71,7 @@ export const HomeSection = () => {
             >
               <div style={aboutPageModalStyle}>
                 <button
-                  className=" flex z-50 ml-5 mb-2 mt-4"
+                  className=" flex z-10 ml-5 mb-2 mt-4"
                   onClick={closeModal}
                 >
                   <FontAwesomeIcon

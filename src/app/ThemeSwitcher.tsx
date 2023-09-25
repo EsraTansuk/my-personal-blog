@@ -8,7 +8,7 @@ export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="right-9 pt-7 z-50 absolute ">
+    <div className="right-9 pt-7 z-[99] absolute ">
       {theme === "dark" && (
         <button
           className="text-lGray bg-iconBgColor w-14 h-14 rounded-full pt-1 "
