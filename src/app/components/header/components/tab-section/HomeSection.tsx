@@ -31,7 +31,7 @@ export const HomeSection = () => {
             }}
           ></div>
           <div className="max-w-full lg:w-4/6 items-center text-center lg:text-left md:px-12 lg:px-20 2xl:px-48 mb-10">
-            <h1 className="text-4xl md:text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold ps-8">
+            <h1 className="text-4xl md:text-5xl 2xl:text-6xl relative mt-6 uppercase text-mainColor font-bold">
               I'm Esra Tansuk. <br />
               <span className="dark:text-white text-textLight my-4">
                 Frontend Developer

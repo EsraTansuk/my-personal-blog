@@ -42,7 +42,7 @@ export const formatMessage = (
   extraMessages?: Record<string, PrimitiveType | any | undefined>
 ) => {
   const cache = createIntlCache();
-  const selectedLang = store.getState().app.lang;
+  const selectedLang = store.getState().app.language;
 
   const intl = createIntl(
     {
