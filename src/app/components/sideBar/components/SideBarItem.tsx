@@ -36,7 +36,7 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
 
   return (
     <li
-      className="w-14 h-14 rounded-full bg-lGray dark:bg-iconBgColor dark:hover:bg-mainColor cursor-pointer relative mx-3  px-4 py-3 hover:bg-mainColor hover:text-tWhite"
+      className="w-14 h-14 rounded-full bg-lGray dark:bg-iconBgColor dark:hover:bg-mainColor cursor-pointer relative mx-3 px-4 py-3 hover:bg-mainColor hover:text-tWhite"
       onMouseOver={() => setDisplayShowMore(true)}
       onMouseOut={() => setDisplayShowMore(false)}
       onClick={() => (url === "" ? setSelectedTab(index) : push(url))}
