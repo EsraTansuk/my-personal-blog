@@ -34,7 +34,6 @@ const LanguageSwitcher = () => {
           alt="Language Flag"
           width={56}
           height={56}
-          className="ps-1"
         />
       </button>
     </div>
