@@ -8,7 +8,7 @@ export const BlogSection = () => {
     <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
             <div className="w-full lg:max-w-7xl">
               <Title titleOne="MY" titleTwo="BLOG" titleBackground="POSTS" />
-              <div className="w-full mb-14">
+              <div className="w-full mb-20 lg:mb-14">
                 <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto">
                   <BlogItem
                     src="/img/blog-post-1.webp"

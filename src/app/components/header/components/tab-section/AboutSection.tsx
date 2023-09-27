@@ -127,7 +127,7 @@ export const AboutSection = () => {
 
                 <p className=" pl-11 text-base md:text-lg ">
                   {" "}
-                  COMPLETED <span>PROJECT</span>
+                  COMPLETED <span>PROJECTS</span>
                 </p>
               </div>
             </div>
