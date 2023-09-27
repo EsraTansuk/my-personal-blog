@@ -23,7 +23,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="right-9 pt-24 z-[99] absolute ">
+    <div className="right-3 pt-24 z-[99] absolute ">
       <button
         onClick={changeLanguage}
         className="pt-1 "
