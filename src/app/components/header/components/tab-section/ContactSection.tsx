@@ -20,7 +20,7 @@ export const ContactSection = () => {
     <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
         <Title titleOne="GET IN" titleTwo="TOUCH" titleBackground="CONTACT" />
-        <div className="flex flex-col  lg:flex-row xl:justify-between items-center mt-7 mb-20">
+        <div className="flex flex-col lg:flex-row xl:justify-between items-center mt-7 mb-20">
           <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5 text-textLight dark:text-tWhite">
             <h3 className="text-2xl md:text-3xl pb-4 font-medium">
               DON'T BE SHY!
@@ -109,7 +109,7 @@ export const ContactSection = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full px-4 lg:w-3/5">
+          <div className="w-full px-4 py-8 lg:py-0 lg:w-3/5">
             <form className="flex flex-col gap-0 md:gap-4">
               <div className="flex flex-row gap-4 ">
                 <input
