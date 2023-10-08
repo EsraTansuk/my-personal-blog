@@ -27,7 +27,7 @@ export const AboutSection = () => {
   return (
     <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
-        <Title titleOne={translator("ABOUT.ABOUT")} titleTwo={currentLanguage?.name === "en-US" ? translator("ABOUT.ME") : undefined} titleBackground="RESUME" />
+        <Title titleOne={translator("ABOUT.ABOUT")} titleTwo={currentLanguage?.name === "en-US" ? translator("ABOUT.ME") : undefined} titleBackground={translator("ABOUT.RESUME")} />
         <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
           <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
             <h1 className=" text-2xl md:text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-textLight dark:text-tWhite">
@@ -36,44 +36,38 @@ export const AboutSection = () => {
             <div className="w-full">
               <ul className="text-base flex flex-wrap text-textLight dark:text-tWhite">
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70 ">Full Name :</span>
+                  <span className="opacity-70 ">{translator("ABOUT.FULLNAME")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     Esra Tansuk
                   </span>
                 </li>
-                {/* <li className="pb-5 w-2/4">
-                  <span className="opacity-70">Last Name :</span>
-                  <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                    {" "}
-                    Tansuk
-                  </span>
-                </li> */}
+             
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Age :</span>
+                  <span className="opacity-70">{translator("ABOUT.AGE")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     29
                   </span>
                 </li>
                 <li className="md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Nationality :</span>
+                  <span className="opacity-70">{translator("ABOUT.NATIONALITY")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    Turkey
+                    {translator("ABOUT.TURKEY")} 
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Freelance :</span>
+                  <span className="opacity-70">{translator("ABOUT.FREELANCE")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    Available
+                    {translator("ABOUT.AVAILABLE")}
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Address :</span>
+                  <span className="opacity-70">{translator("ABOUT.ADDRESS")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    Ankara, Turkey
+                    Ankara, {translator("ABOUT.TURKEY")}
                   </span>
                 </li>
                 {/* <li className="pb-5 w-2/4">
@@ -84,14 +78,14 @@ export const AboutSection = () => {
                   </span>
                 </li> */}
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Email :</span>
+                  <span className="opacity-70">{translator("ABOUT.EMAIL")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     esra.tansuk@gmail.com
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">GitHub Profile :</span>
+                  <span className="opacity-70">{translator("ABOUT.GITHUB.PROFILE")} :</span>
                   <Link
                     href="https://github.com/EsraTansuk"
                     target="_blank"
@@ -102,10 +96,10 @@ export const AboutSection = () => {
                   </Link>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">Languages :</span>
+                  <span className="opacity-70">{translator("ABOUT.LANGUAGES")} :</span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    English, German
+                    {translator("ABOUT.ENGLISH")}, {translator("ABOUT.GERMAN")}
                   </span>
                 </li>
               </ul>
@@ -121,7 +115,7 @@ export const AboutSection = () => {
 
                 <p className=" pl-11 text-base md:text-lg">
                   {" "}
-                  YEARS OF <span>EXPERIENCE</span>
+                  {translator("ABOUT.YEARS.OF.EXPERIENCE")}
                 </p>
               </div>
               <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
@@ -132,20 +126,20 @@ export const AboutSection = () => {
 
                 <p className=" pl-11 text-base md:text-lg ">
                   {" "}
-                  COMPLETED <span>PROJECTS</span>
+                  {translator("ABOUT.COMPLETED.PROJECTS")}
                 </p>
               </div>
             </div>
             <div className="w-full gap-2 md:gap-10 flex flex-row ">
               <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
-                  1
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
+                  2
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
                 <p className=" pl-11 text-base md:text-lg">
                   {" "}
-                  HAPPY <span>CUSTOMER</span>
+                  {translator("ABOUT.HAPPY.CUSTOMERS")}
                 </p>
               </div>
               <div className="w-1/2 mb-8 pt-5 pe-18 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
@@ -156,7 +150,7 @@ export const AboutSection = () => {
 
                 <p className=" pl-11 text-base md:text-lg">
                   {" "}
-                  CERTIFICATE OF <span>ACHIEVEMENT</span>
+                  {translator("ABOUT.CERTIFICATION.OF.ACHIEVEMENT")}
                 </p>
               </div>
             </div>
@@ -166,7 +160,7 @@ export const AboutSection = () => {
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-2xl md:text-3xl font-semibold my-10">
-              MY SKILLS
+            {translator("ABOUT.MY.SKILLS")}
             </h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
@@ -488,7 +482,7 @@ export const AboutSection = () => {
           <div>
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-2xl md:text-3xl font-semibold text-center text-textLight dark:text-tWhite my-10">
-              EXPERIENCE & EDUCATION
+            {translator("ABOUT.EXPERIENCE.&.EDUCATION")}
             </h2>
           </div>
           <div className="w-full flex flex-col lg:flex-row">
@@ -503,7 +497,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2023 - PRESENT
+                      2023 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       Frontend Developer Intern
@@ -525,7 +519,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2018 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       WEB DEVELOPER{" "}
@@ -548,7 +542,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2018 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       WEB DEVELOPER{" "}
@@ -576,7 +570,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2018 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       WEB DEVELOPER{" "}
@@ -599,7 +593,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2018 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       WEB DEVELOPER{" "}
@@ -622,7 +616,7 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - PRESENT
+                      2018 - {translator("ABOUT.PRESENT")}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       WEB DEVELOPER{" "}
