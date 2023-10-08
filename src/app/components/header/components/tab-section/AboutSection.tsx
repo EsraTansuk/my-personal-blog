@@ -6,8 +6,13 @@ import { Title } from "../title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { translator } from "@/utils/translator";
+import { useAppSelector } from "@/hooks";
+import { getLanguageState } from "@/app/app/appSelector";
 
 export const AboutSection = () => {
+  const currentLanguage = useAppSelector(getLanguageState());
+
   const htmlPercentage: number = 80;
   const cssPercentage: number = 80;
   const scssPercentage: number = 80;
@@ -22,11 +27,11 @@ export const AboutSection = () => {
   return (
     <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
-        <Title titleOne="ABOUT" titleTwo="ME" titleBackground="RESUME" />
+        <Title titleOne={translator("ABOUT.ABOUT")} titleTwo={currentLanguage?.name === "en-US" ? translator("ABOUT.ME") : undefined} titleBackground="RESUME" />
         <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
           <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
             <h1 className=" text-2xl md:text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-textLight dark:text-tWhite">
-              PERSONAL INFOS
+              {translator("ABOUT.PERSONAL.INFOS")}
             </h1>
             <div className="w-full">
               <ul className="text-base flex flex-wrap text-textLight dark:text-tWhite">

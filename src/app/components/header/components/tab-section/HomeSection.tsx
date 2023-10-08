@@ -6,6 +6,7 @@ import { CustomModal } from "../customModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faRightLong } from "@fortawesome/free-solid-svg-icons";
 import { AboutSection } from "./AboutSection";
+import { translator } from "@/utils/translator";
 
 export const HomeSection = () => {
   const aboutPageModalStyle = {
@@ -38,13 +39,7 @@ export const HomeSection = () => {
               </span>
             </h1>
             <p className=" mt-4 mb-7 leading-7 md:leading-8 text-base md:text-lg dark:text-white text-textLight">
-              Hello, I'm Esra, a frontend developer with a year's experience in
-              web development. I have strong skills in HTML, CSS, JavaScript,
-              along with expertise in responsive design frameworks like
-              Bootstrap and Tailwind. I have hands-on experience in React and
-              Next.js for building dynamic web apps, and use TypeScript for
-              improved code reliability. Passionate and self-driven, I always
-              strive to stay updated with the latest trends in my field.
+              {translator("HOME.INTRODUCING")}
             </p>
 
             <div className="group">
@@ -53,9 +48,9 @@ export const HomeSection = () => {
                 onClick={() => openModal()}
               >
                 <span className="relative dark:text-tWhite text-textLight group-hover:text-tWhite">
-                  MORE ABOUT ME
+                  {translator("HOME.MORE.ABOUT.ME")}
                 </span>
-                <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[141px] md:ml-[162px] absolute">
+                <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[141px] md:ml-[162px] absolute right-0">
                   <FontAwesomeIcon
                     icon={faRightLong}
                     style={{ width: "50px", height: "30px" }}
