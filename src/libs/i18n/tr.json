@@ -7,7 +7,7 @@
   "ABOUT.FULLNAME": "Ad-Soyad",
   "ABOUT.AGE": "Yaş",
   "ABOUT.NATIONALITY": "Uyruk",
-  "ABOUT.FREELANCE": "Serbest Çalışan",
+  "ABOUT.FREELANCE": "Freelance",
   "ABOUT.ADDRESS": "Adres",
   "ABOUT.EMAIL": "E-posta",
   "ABOUT.GITHUB.PROFILE": "Github Profili",
@@ -21,13 +21,13 @@
   "ABOUT.CERTIFICATION.OF.ACHIEVEMENT": "BAŞARI SERTİFİKASI",
   "ABOUT.MY.SKILLS": "BECERİLERİM",
   "ABOUT.EXPERIENCE.&.EDUCATION": "DENEYİM & EĞİTİM",
-  "ABOUT.PRESENT":"ŞU ANDA",
+  "ABOUT.PRESENT": "ŞU ANDA",
   "PORTFOLIO.WORKS": "ÇALIŞMALAR",
   "PORTFOLIO.MY.PORTFOLIO": "PORTFOLYOM",
   "CONTACT.GET.IN.TOUCH": "İLETİŞİME GEÇ",
   "CONTACT.CONTACT": "İLETİŞİM",
   "CONTACT.DONT.BE.SHY": "Çekinme!",
-  "CONTACT.INTRODUCING" : "Benimle iletişime geçmekten çekinmeyin. Yeni projeleri, yaratıcı fikirleri tartışmaya veya vizyonlarınızın bir parçası olma fırsatlarına her zaman açığım.",
+  "CONTACT.INTRODUCING": "Benimle iletişime geçmekten çekinmeyin. Yeni projeleri, yaratıcı fikirleri tartışmaya veya vizyonlarınızın bir parçası olma fırsatlarına her zaman açığım.",
   "CONTACT.ADDRESS.POINT": "ADRES NOKTASI",
   "CONTACT.MAIL.ME": "BANA E-POSTA GÖNDER",
   "CONTACT.YOUR.NAME": "ADINIZ",
@@ -37,11 +37,4 @@
   "CONTACT.SEND.MESSAGE": "MESAJ GÖNDER",
   "BLOG.POSTS": "YAZILAR",
   "BLOG.MY.BLOG": "BLOGUM"
-
-
-
-
-
-
-
 }

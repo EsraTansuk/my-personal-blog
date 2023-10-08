@@ -184,7 +184,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -216,7 +215,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -248,7 +246,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -280,7 +277,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -312,7 +308,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -344,7 +339,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -376,7 +370,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -408,7 +401,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -440,7 +432,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}
@@ -472,7 +463,6 @@ export const AboutSection = () => {
                     text: "",
                     background: "",
                   }}
-                  className={""}
                   counterClockwise={false}
                   maxValue={0}
                   minValue={0}

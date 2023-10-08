@@ -1,6 +1,7 @@
 // Util and Lib Imports
 import "./stringExtensions";
 import { store } from "../libs/reduxToolkit";
+import en from "../libs/i18n/en.json";
 
 // Package Imports
 import {
@@ -24,7 +25,7 @@ import { languageMessages } from "../providers";
  */
 
 export const translator = (
-  key: string,
+  key: keyof typeof en,
   extraMessages?: Record<string, PrimitiveType | any | undefined>
 ) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

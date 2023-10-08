@@ -7,20 +7,22 @@ import {
 } from "react-circular-progressbar";
 import { CircularProgressbarProps } from "react-circular-progressbar/dist/types";
 
-interface ProgressbarProps extends CircularProgressbarProps {
+interface ProgressbarProps extends Omit<CircularProgressbarProps, "className"> {
   percentage: number;
   strokeWidth: number;
   trailColor: string;
   pathColor: string;
   textColor: string;
+  className?: string;
 }
 
 export const Progressbar: React.FC<ProgressbarProps> = ({
   percentage,
   strokeWidth,
   trailColor,
-  textColor,
   text,
+  textColor,
+  className,
 }) => {
   const { theme } = useTheme();
 
@@ -29,6 +31,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
       <CircularProgressbarWithChildren
         value={percentage}
         text={`${percentage}%`}
+        className={className}
         styles={{
           root: {
             width: 140,
@@ -45,7 +48,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
             strokeWidth: strokeWidth,
           },
           trail: {
-            stroke: theme == "dark" ? trailColor :  `#eee`,
+            stroke: theme == "dark" ? trailColor : `#eee`,
             strokeLinecap: "round",
             transform: "rotate(0.25turn)",
             transformOrigin: "center center",
@@ -57,12 +60,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
             alignmentBaseline: "middle",
           },
         }}
-      >
-        {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-        {/* <div style={{ fontSize: 20, display:"block" }}>
-          <h4>{`${percentage}%`}</h4>
-        </div> */}
-      </CircularProgressbarWithChildren>
+      />
       <div className="text-lg text-center mt-5">
         <h4>{text}</h4>
       </div>
