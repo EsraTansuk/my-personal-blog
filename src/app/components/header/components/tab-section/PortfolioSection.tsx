@@ -1,12 +1,30 @@
+'use client'
+
 import React from "react";
 import { PortfolioItem } from "../portfolio-item";
 import { Title } from "../title";
+import { useAppSelector } from "@/hooks";
+import { translator } from "@/utils/translator";
+import { getLanguageState } from "@/app/app/appSelector";
 
 export const PortfolioSection = () => {
+
+  const currentLanguage = useAppSelector(getLanguageState());
+
+
   return (
     <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
-        <Title titleOne="MY" titleTwo="PORTFOLIO" titleBackground="WORKS" />
+        <Title
+          titleOne={translator("PORTFOLIO.MY.PORTFOLIO")}
+
+          titleTwo={
+            currentLanguage?.name === "en-US"
+              ? translator("PORTFOLIO.PORTFOLIO")
+              : undefined
+          }
+          titleBackground={translator("PORTFOLIO.WORKS")}
+        />
 
         <div className="w-full mb-20 lg:mb-12">
           <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-3 gap-7 xl:mx-auto  ">

@@ -1,3 +1,5 @@
+'use client'
+
 // React Imports
 import { FC, PropsWithChildren, useEffect } from "react";
 
@@ -11,7 +13,9 @@ import { setLanguageAction } from "../app/app/appAction";
 // Package Imports
 import { languageMessages } from "./I18nProvider";
 
-export const AppInitializeProvider: FC<PropsWithChildren> = ({ children }) => {
+import { ReactNode } from "react";
+
+export const AppInitializeProvider: FC<PropsWithChildren<ReactNode>> = ({ children }) => {
   const appLanguage = useAppSelector(getLanguageState());
 
   const dispatch = useAppDispatch();

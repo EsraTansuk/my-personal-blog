@@ -50,17 +50,7 @@ export const ContactSection = () => {
               </span>
               <a href="mailto:esra.tansuk@gmail.com">esra.tansuk@gmail.com</a>
             </p>
-            {/* <p className=" font-medium leading-7 pt-1 mb-5 text-base pl-16 relative">
-                    <FontAwesomeIcon
-                      icon={faSquarePhoneFlip}
-                      className="mr-4 left-0 top-2 text-5xl text-mainColor absolute"
-                    />
-                    <span className=" font-normal opacity-50 pb-0 text-lg block text-textLight dark:text-amber-50">
-                      CALL ME
-                    </span>
-                    <a href="tel:+905323456789">-</a>
-                  </p> */}
-
+            
             <ul className="flex flex-row gap-4 text-xl pt-4 -ml-1">
               <li className=" inline-block ">
                 <Link
