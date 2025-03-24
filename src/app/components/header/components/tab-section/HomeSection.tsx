@@ -9,14 +9,8 @@ import { AboutSection } from "./AboutSection";
 import { translator } from "@/utils/translator";
 
 export const HomeSection = () => {
-  const aboutPageModalStyle = {
-    ...CustomModal,
-    backgroundColor: "#111",
-    overlay: {
-      backgroundColor: "#efef",
-    },
-  };
   const { isOpen, closeModal, openModal } = useModal();
+
   return (
     <>
       <div className="color-block d-none d-lg-block bg-mainColor hidden lg:block"></div>
@@ -62,9 +56,9 @@ export const HomeSection = () => {
             <CustomModal
               isOpen={isOpen}
               onClose={closeModal}
-              className="about-page-modal mx-2 force-overflow large-2 "
+              className="about-page-modal mx-2 force-overflow large-2"
             >
-              <div style={aboutPageModalStyle}>
+              <div>
                 <button
                   className=" flex z-10 ml-5 mb-2 mt-4"
                   onClick={closeModal}

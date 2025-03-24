@@ -1,12 +1,12 @@
-version: "3.8"
+version: '3'
 
 services:
-  Foxy.PersonalBlog:
-    image: foxy-personal-blog
-    container_name: foxy-personal-blog-container
-    ports:
-      - "8000:8000"
-    restart: always
+  app:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always 

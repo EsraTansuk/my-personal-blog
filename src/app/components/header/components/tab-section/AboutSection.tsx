@@ -511,8 +511,36 @@ export const AboutSection = () => {
                         className=" my-3 text-lGray text-2xl"
                       />
                     </div>
+                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
+                      {`${translator("MONTH.APRIL")} 2024 - ${translator(
+                        "ABOUT.PRESENT"
+                      )}`}
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      FRONTEND DEVELOPER
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        PROTECTREMOTE.COM
+                      </span>
+                    </h5>
+                    <p className="text-textLight dark:text-lGray text-sm m-0">
+                      I am working as a Frontend Developer at ProtectRemote.com,
+                      helping the company to build their website and their
+                      products.
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        className=" my-3 text-lGray text-2xl"
+                      />
+                    </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2023 - {translator("ABOUT.PRESENT")}
+                      {`${translator("MONTH.FEBRUARY")} 2023 - ${translator(
+                        "MONTH.DECEMBER"
+                      )} 2023`}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       Frontend Developer Intern
@@ -525,55 +553,10 @@ export const AboutSection = () => {
                       I am working as a Frontend Developer Intern at Pointo.
                     </p>
                   </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
                 </ul>
               </div>
             </div>
+
             <div className=" lg:w-2/4 w-full px-4">
               <div className=" box-border">
                 <ul className=" list-none m-0 p-0 block">
@@ -585,64 +568,32 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
+                      {`${translator("MONTH.DECEMBER")} 2023 - ${translator(
+                        "MONTH.APRIL"
+                      )} 2024`}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
+                      FRONTEND DEVELOPER
                       <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
                         {" "}
-                        ENVATO
+                        ÜRÜNVER MÜHENDİSLİK -{" "}
+                        <Link
+                          href="https://difolaunchpad.com/"
+                          target="_blank"
+                          className=" hover:underline"
+                        >
+                          https://difolaunchpad.com/
+                        </Link>
                       </span>
                     </h5>
                     <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
+                      I worked as a Frontend Developer at Ürünver Mühendislik
+                      where I built difolaunchpad.com using Next.js. My
+                      responsibilities included implementing responsive UI
+                      components, integrating APIs, and ensuring cross-browser
+                      compatibility. I collaborated with the design and backend
+                      teams to deliver a seamless user experience while
+                      maintaining code quality and performance standards.
                     </p>
                   </li>
                 </ul>
