@@ -11,7 +11,8 @@ export const ThemeSwitcher = () => {
     <div className="right-3 pt-7 z-[999] absolute ">
       {theme === "dark" && (
         <button
-          className="text-lGray bg-iconBgColor w-14 h-14 rounded-full pt-1 "
+          type="button"
+          className="text-backColor bg-lGray w-14 h-14 rounded-full pt-1"
           onClick={() => setTheme("light")}
         >
           <FontAwesomeIcon icon={faSun} size="lg" />
@@ -20,10 +21,11 @@ export const ThemeSwitcher = () => {
 
       {theme === "light" && (
         <button
+          type="button"
           className="text-backColor bg-lGray w-14 h-14 rounded-full pt-1"
           onClick={() => setTheme("dark")}
         >
-          <FontAwesomeIcon icon={faMoon} size="lg"/>
+          <FontAwesomeIcon icon={faMoon} size="lg" />
         </button>
       )}
     </div>

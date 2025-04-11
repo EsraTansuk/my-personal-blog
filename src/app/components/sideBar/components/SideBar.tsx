@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 // React Imports
 import React from "react";
@@ -13,7 +13,6 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { SideBarItem } from "./SideBarItem";
-
 
 interface Pages {
   title: string;
@@ -51,7 +50,7 @@ const pages: Pages[] = [
 
 export const SideBar = () => {
   return (
-    <ul className="text-3xl w-full text-textLight dark:text-tWhite flex flex-row border-x-fuchsia-50 border-t-2 dark:border-t-0 gap-[2%] shadow-shadowColor  shadow-2xl lg:shadow-none lg:flex-col lg:w-20 lg:justify-center px-3 lg:px-0 lg:ms-6 lg:me-0 bottom-0 bg-tWhite dark:bg-greyBg lg:dark:bg-transparent justify-around lg:h-full fixed right-0 z-50">
+    <ul className="text-xl sm:text-2xl lg:text-3xl w-full text-textLight dark:text-tWhite flex flex-row border-x-fuchsia-50 border-t-2 dark:border-t-0 gap-[1%] sm:gap-[1.5%] lg:gap-[2%] shadow-shadowColor shadow-2xl lg:shadow-none lg:flex-col lg:w-20 lg:justify-center px-2 sm:px-3 lg:px-0 lg:ms-6 lg:me-0 bottom-0 bg-tWhite dark:bg-greyBg lg:dark:bg-transparent justify-around lg:h-full fixed right-0 z-50">
       {pages?.map(({ title, icon, url }, index) => (
         <SideBarItem
           title={title.toUpperCase()}

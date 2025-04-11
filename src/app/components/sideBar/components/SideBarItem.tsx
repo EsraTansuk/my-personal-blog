@@ -36,14 +36,17 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
 
   return (
     <li
-      className="w-14 h-14 rounded-full bg-lGray dark:bg-iconBgColor dark:hover:bg-mainColor cursor-pointer relative mx-3 px-4 py-3 hover:bg-mainColor hover:text-tWhite"
+      className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-lGray dark:bg-iconBgColor dark:hover:bg-mainColor cursor-pointer relative mx-1 sm:mx-2 lg:mx-3 flex items-center justify-center hover:bg-mainColor hover:text-tWhite"
       onMouseOver={() => setDisplayShowMore(true)}
       onMouseOut={() => setDisplayShowMore(false)}
       onClick={() => (url === "" ? setSelectedTab(index) : push(url))}
     >
-      <button className=" pl-[1px]">
-        <FontAwesomeIcon icon={icon} style={{ width: "22px" }} />
-        <h2 className={showMoreClass}>{title}</h2>
+      <button className="w-full h-full flex items-center justify-center">
+        <FontAwesomeIcon 
+          icon={icon} 
+          className="fa-sm sm:fa-base lg:fa-lg"
+        />
+        <h2 className={`${showMoreClass} text-sm sm:text-base lg:text-lg`}>{title}</h2>
       </button>
     </li>
   );
