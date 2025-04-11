@@ -2,13 +2,7 @@ import React from "react";
 import { useAppDispatch, useAppSelector } from "../hooks";
 import { setLanguageAction } from "../app/app/appAction";
 import { getLanguageState } from "./app/appSelector";
-
 import { LanguageModel } from "../app/app/models/languageModel";
-
-//image Imports
-import trFlag from "../../public/img/turkey.png";
-import enFlag from "../../public/img/united-states-of-america.png";
-import Image from "next/image";
 
 const LanguageSwitcher = () => {
   const dispatch = useAppDispatch();
@@ -23,17 +17,12 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="right-2 sm:right-3 pt-16 sm:pt-20 lg:pt-24 z-[99] absolute">
-      <button onClick={changeLanguage} className="pt-0.5 sm:pt-1" type="button">
-        <Image
-          src={currentLanguage?.name === "en-US" ? enFlag : trFlag}
-          alt="Language Flag"
-          width={32}
-          height={32}
-          className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14"
-        />
-      </button>
-    </div>
+    <span 
+      onClick={changeLanguage}
+      className="cursor-pointer font-semibold text-sm sm:text-base lg:text-lg select-none"
+    >
+      {currentLanguage.name === "en-US" ? "US" : "TR"}
+    </span>
   );
 };
 
