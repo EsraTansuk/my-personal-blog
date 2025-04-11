@@ -43,16 +43,34 @@
   "BLOG.MY.BLOG": "MY",
   "BLOG.BLOG": "BLOG",
 
-  "MONTH.JANUARY": "Jan",
-  "MONTH.FEBRUARY": "Feb",
-  "MONTH.MARCH": "Mar",
-  "MONTH.APRIL": "Apr",
+  "MONTH.JANUARY": "January",
+  "MONTH.FEBRUARY": "February",
+  "MONTH.MARCH": "March",
+  "MONTH.APRIL": "April",
   "MONTH.MAY": "May",
-  "MONTH.JUNE": "Jun",
-  "MONTH.JULY": "Jul",
-  "MONTH.AUGUST": "Aug",
-  "MONTH.SEPTEMBER": "Sep",
-  "MONTH.OCTOBER": "Oct",
-  "MONTH.NOVEMBER": "Nov",
-  "MONTH.DECEMBER": "Dec"
+  "MONTH.JUNE": "June",
+  "MONTH.JULY": "July",
+  "MONTH.AUGUST": "August",
+  "MONTH.SEPTEMBER": "September",
+  "MONTH.OCTOBER": "October",
+  "MONTH.NOVEMBER": "November",
+  "MONTH.DECEMBER": "December",
+
+  "ABOUT.FRONTEND.DEVELOPER": "FRONTEND DEVELOPER",
+  "ABOUT.FRONTEND.DEVELOPER.INTERN": "FRONTEND DEVELOPER INTERN",
+  "ABOUT.WORKING.AT": "I am currently working as a Frontend Developer at ProtectRemote.com, helping them develop their website and products.",
+  "ABOUT.WORKING.AT.POINTO": "I worked as a Frontend Developer Intern at Pointo.",
+  "ABOUT.WORKING.AT.URUNVER": "I worked as a Frontend Developer at Urunver Engineering. I developed difolaunchpad.com using Next.js. My responsibilities included implementing responsive UI components, integrating APIs, and ensuring cross-browser compatibility. I collaborated with design and backend teams to deliver a seamless user experience while maintaining code quality and performance standards.",
+
+  "EXPERIENCE.PROTECTREMOTE.TITLE": "FRONTEND DEVELOPER",
+  "EXPERIENCE.PROTECTREMOTE.COMPANY": "PROTECTREMOTE.COM",
+  "EXPERIENCE.PROTECTREMOTE.DESCRIPTION": "I am working as a Frontend Developer at ProtectRemote.com, helping the company to build their website and their products.",
+
+  "EXPERIENCE.POINTO.TITLE": "Frontend Developer Intern",
+  "EXPERIENCE.POINTO.COMPANY": "POINTO",
+  "EXPERIENCE.POINTO.DESCRIPTION": "I worked as a Frontend Developer Intern at Pointo.",
+
+  "EXPERIENCE.URUNVER.TITLE": "FRONTEND DEVELOPER",
+  "EXPERIENCE.URUNVER.COMPANY": "ÜRÜNVER ENGINEERING",
+  "EXPERIENCE.URUNVER.DESCRIPTION": "I worked as a Frontend Developer at Ürünver Engineering where I built difolaunchpad.com using Next.js. My responsibilities included implementing responsive UI components, integrating APIs, and ensuring cross-browser compatibility. I collaborated with the design and backend teams to deliver a seamless user experience while maintaining code quality and performance standards."
 }

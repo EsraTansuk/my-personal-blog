@@ -2,17 +2,15 @@
 
 // React Imports
 import React, { FC, PropsWithChildren } from "react";
-
-// Package Imports
 import Modal from "react-modal";
+import { useTheme } from "next-themes";
 
-const customStyles = {
+const getCustomStyles = (theme: string | undefined) => ({
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 1)",
+    backgroundColor: theme === 'dark' ? "rgba(0, 0, 0, 0.75)" : "rgba(0, 0, 0, 0.6)",
     opacity: 1,
     zIndex: 40,
   },
-
   content: {
     top: "50%",
     left: "50%",
@@ -20,12 +18,16 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#252525",
+    backgroundColor: theme === 'dark' ? "#1a1a1a" : "#ffffff",
+    color: theme === 'dark' ? "#ffffff" : "#000000",
     border: "none",
     borderRadius: "10px",
     position: "fixed",
+    boxShadow: theme === 'dark' 
+      ? "0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+      : "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   },
-};
+});
 
 interface CustomModalProps extends PropsWithChildren<any> {
   className?: string;
@@ -39,23 +41,20 @@ export const CustomModal: FC<CustomModalProps> = ({
   className,
   children,
 }) => {
-  let subtitle: HTMLHeadingElement | null;
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    if (subtitle) subtitle.style.color = "#f00";
-  }
+  const { theme } = useTheme();
+  const customStyles = getCustomStyles(theme);
 
   return (
     <Modal
-      className={className}
+      className={`${className} transition-all duration-300 ease-in-out`}
       isOpen={isOpen}
-      onAfterOpen={afterOpenModal}
       onRequestClose={onClose}
       style={customStyles as any}
-      contentLabel="Example Modal"
+      contentLabel="Blog Post Modal"
     >
-      {children}
+      <div className="relative">
+        {children}
+      </div>
     </Modal>
   );
 };

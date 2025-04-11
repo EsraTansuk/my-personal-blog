@@ -579,16 +579,14 @@ export const AboutSection = () => {
                     )}`}
                   </span>
                   <h5 className="text-base sm:text-lg mt-2 mx-0 mb-2 sm:mb-3 font-medium">
-                    FRONTEND DEVELOPER
+                    {translator("EXPERIENCE.PROTECTREMOTE.TITLE")}
                     <span className="before:content-['-'] opacity-80 relative pl-2 sm:pl-4 text-xs sm:text-sm md:text-[15px]">
                       {" "}
-                      PROTECTREMOTE.COM
+                      {translator("EXPERIENCE.PROTECTREMOTE.COMPANY")}
                     </span>
                   </h5>
                   <p className="text-textLight dark:text-lGray text-xs sm:text-sm md:text-base m-0">
-                    I am working as a Frontend Developer at ProtectRemote.com,
-                    helping the company to build their website and their
-                    products.
+                    {translator("EXPERIENCE.PROTECTREMOTE.DESCRIPTION")}
                   </p>
                 </li>
 
@@ -605,14 +603,14 @@ export const AboutSection = () => {
                     )} 2023`}
                   </span>
                   <h5 className="text-base sm:text-lg mt-2 mx-0 mb-2 sm:mb-3 font-medium">
-                    Frontend Developer Intern
+                    {translator("EXPERIENCE.POINTO.TITLE")}
                     <span className="before:content-['-'] opacity-80 relative pl-2 sm:pl-4 text-xs sm:text-sm md:text-[15px]">
                       {" "}
-                      POINTO
+                      {translator("EXPERIENCE.POINTO.COMPANY")}
                     </span>
                   </h5>
                   <p className="text-textLight dark:text-lGray text-xs sm:text-sm md:text-base m-0">
-                    I am working as a Frontend Developer Intern at Pointo.
+                    {translator("EXPERIENCE.POINTO.DESCRIPTION")}
                   </p>
                 </li>
               </ul>
@@ -635,10 +633,10 @@ export const AboutSection = () => {
                     )} 2024`}
                   </span>
                   <h5 className="text-base sm:text-lg mt-2 mx-0 mb-2 sm:mb-3 font-medium">
-                    FRONTEND DEVELOPER
+                    {translator("EXPERIENCE.URUNVER.TITLE")}
                     <span className="before:content-['-'] opacity-80 relative pl-2 sm:pl-4 text-xs sm:text-sm md:text-[15px]">
                       {" "}
-                      ÜRÜNVER MÜHENDİSLİK -{" "}
+                      {translator("EXPERIENCE.URUNVER.COMPANY")} -{" "}
                       <Link
                         href="https://difolaunchpad.com/"
                         target="_blank"
@@ -649,13 +647,7 @@ export const AboutSection = () => {
                     </span>
                   </h5>
                   <p className="text-textLight dark:text-lGray text-xs sm:text-sm md:text-base m-0">
-                    I worked as a Frontend Developer at Ürünver Mühendislik
-                    where I built difolaunchpad.com using Next.js. My
-                    responsibilities included implementing responsive UI
-                    components, integrating APIs, and ensuring cross-browser
-                    compatibility. I collaborated with the design and backend
-                    teams to deliver a seamless user experience while
-                    maintaining code quality and performance standards.
+                    {translator("EXPERIENCE.URUNVER.DESCRIPTION")}
                   </p>
                 </li>
               </ul>

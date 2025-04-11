@@ -1,3 +1,5 @@
+'use client';
+
 /* eslint-disable react/no-unescaped-entities */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,21 +16,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Title } from "../title";
 import Link from "next/link";
+import { translator } from "@/utils/translator";
 
 export const ContactSection = () => {
   return (
     <div className="flex flex-col items-center w-full overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
-        <Title titleOne="GET IN" titleTwo="TOUCH" titleBackground="CONTACT" />
+        <Title titleOne={translator("CONTACT.GET.IN")} titleTwo={translator("CONTACT.TOUCH")} titleBackground={translator("CONTACT.CONTACT")} />
         <div className="flex flex-col lg:flex-row xl:justify-between items-center mt-7 mb-20">
           <div className="w-full px-4 xl:px-0 lg:w-2/6 pr-5 text-textLight dark:text-tWhite">
             <h3 className="text-2xl md:text-3xl pb-4 font-medium">
-              DON'T BE SHY!
+              {translator("CONTACT.DONT.BE.SHY")}
             </h3>
             <p className="mb-6 text-sm md:text-base">
-              Feel free to get in touch with me. I am always open to discussing
-              new projects, creative ideas or opportunities to be part of your
-              visions.
+              {translator("CONTACT.INTRODUCING")}
             </p>
             <div className="flex flex-col gap-6">
               <div className="flex items-start gap-4">
@@ -37,7 +38,7 @@ export const ContactSection = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-normal opacity-50 text-base md:text-lg text-textLight dark:text-amber-50">
-                    ADDRESS POINT
+                    {translator("CONTACT.ADDRESS.POINT")}
                   </span>
                   <span className="font-medium text-sm md:text-base">
                     Yenimahalle/ Ankara
@@ -50,7 +51,7 @@ export const ContactSection = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="font-normal opacity-50 text-base md:text-lg text-textLight dark:text-amber-50">
-                    MAIL ME
+                    {translator("CONTACT.MAIL.ME")}
                   </span>
                   <a
                     href="mailto:esra.tansuk@gmail.com"
@@ -115,12 +116,12 @@ export const ContactSection = () => {
               <div className="flex flex-row gap-4 ">
                 <input
                   type="text"
-                  placeholder="YOUR NAME"
+                  placeholder={translator("CONTACT.YOUR.NAME")}
                   className="w-full mb-4 md:py-3 text-bodyDarkColor px-6 border text-sm md:text-lg dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
                 />
                 <input
                   type="email"
-                  placeholder="YOUR EMAIL"
+                  placeholder={translator("CONTACT.YOUR.EMAIL")}
                   className="w-full text-bodyDarkColor md:py-3 dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
                 />
               </div>
@@ -128,25 +129,25 @@ export const ContactSection = () => {
               <input
                 type="text"
                 name="subject"
-                placeholder="YOUR SUBJECT"
+                placeholder={translator("CONTACT.YOUR.SUBJECT")}
                 className="w-full text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
               />
               <textarea
                 name="message"
                 id="message"
-                placeholder="YOUR MESSAGE"
+                placeholder={translator("CONTACT.YOUR.MESSAGE")}
                 className="mb-4  text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-3xl h-36 md:h-52 border-gray-300"
               ></textarea>
 
               <div className="mt-3">
-                <button className="hover-button border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 transition-all duration-300 ease-in-out hover:bg-mainColor">
-                  <span className="relative text-textLight dark:text-tWhite transition-colors duration-300 ease-in-out hover:text-tWhite">
-                    SEND MESSAGE
+                <button className="border border-solid text-tWhite border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[70px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:bg-mainColor transition duration-300 ease-in-out">
+                <span className="relative dark:text-tWhite text-textLight group-hover:text-tWhite">
+                    {translator("CONTACT.SEND.MESSAGE")}
                   </span>
-                  <span className="rounded-full text-tWhite bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute transition-colors duration-300 ease-in-out">
+                  <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[141px] md:ml-[162px] absolute right-0">
                     <FontAwesomeIcon
                       icon={faPaperPlane}
-                      className="transition-transform duration-300 ease-in-out hover:scale-110 w-[32px] h-[20px] md:w-[46px] md:h-[28px]"
+                      className="transition-transform duration-300 ease-in-out hover:scale-110 w-[35px] h-[22px] md:w-[50px] md:h-[30px]"
                     />
                   </span>
                 </button>

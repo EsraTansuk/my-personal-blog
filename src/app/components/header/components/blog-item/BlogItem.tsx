@@ -22,6 +22,11 @@ export const BlogItem: React.FC<BlogItemProps> = ({
 }) => {
   const { isOpen, closeModal, openModal, toggleModal } = useModal();
 
+  const truncateText = (text: string, maxLength: number = 150) => {
+    if (text.length <= maxLength) return text;
+    return `${text.slice(0, maxLength)}...`;
+  };
+
   return (
     <>
       <div
@@ -46,7 +51,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({
             </h3>
           </div>
           <div>
-            <p className=" mt-4 mx-0 mb-1 text-sm md:text-base">{text}</p>
+            <p className=" mt-4 mx-0 mb-1 text-sm md:text-base">{truncateText(text)}</p>
           </div>
         </div>
       </div>
