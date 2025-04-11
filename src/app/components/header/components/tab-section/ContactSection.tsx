@@ -52,13 +52,16 @@ export const ContactSection = () => {
                   <span className="font-normal opacity-50 text-base md:text-lg text-textLight dark:text-amber-50">
                     MAIL ME
                   </span>
-                  <a href="mailto:esra.tansuk@gmail.com" className="font-medium text-sm md:text-base">
+                  <a
+                    href="mailto:esra.tansuk@gmail.com"
+                    className="font-medium text-sm md:text-base"
+                  >
                     esra.tansuk@gmail.com
                   </a>
                 </div>
               </div>
             </div>
-            
+
             <ul className="flex flex-row gap-4 text-xl pt-8 -ml-1">
               <li className=" inline-block ">
                 <Link
@@ -113,12 +116,12 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   placeholder="YOUR NAME"
-                  className="w-full mb-4 py-3 text-bodyDarkColor px-6 border text-sm md:text-lg outline outline-2 dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
+                  className="w-full mb-4 md:py-3 text-bodyDarkColor px-6 border text-sm md:text-lg dark:outline-bodyDarkColor focus-visible:outline-mainColor dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
                 />
                 <input
                   type="email"
                   placeholder="YOUR EMAIL"
-                  className="w-full outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
+                  className="w-full text-bodyDarkColor md:py-3 dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
                 />
               </div>
 
@@ -126,24 +129,24 @@ export const ContactSection = () => {
                 type="text"
                 name="subject"
                 placeholder="YOUR SUBJECT"
-                className="mb-4 outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor  focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full"
+                className="w-full text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor mb-4 py-2 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-full border-gray-300"
               />
               <textarea
                 name="message"
                 id="message"
                 placeholder="YOUR MESSAGE"
-                className="mb-4 outline outline-2 text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-3xl h-36 md:h-52"
+                className="mb-4  text-bodyDarkColor dark:outline-bodyDarkColor focus-visible:outline-mainColor py-3 px-6 border text-sm md:text-lg dark:bg-borderColor dark:border-bodyDarkColor dark:text-white rounded-3xl h-36 md:h-52 border-gray-300"
               ></textarea>
 
-              <div className="mt-3 group">
-                <button className="border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 hover:text-tWhite hover:bg-mainColor transition duration-300 ease-in-out">
-                  <span className="relative text-textLight dark:text-tWhite group-hover:text-tWhite">
+              <div className="mt-3">
+                <button className="hover-button border border-solid border-mainColor rounded-full text-sm md:text-lg font-semibold ps-[35px] pe-[74px] md:pe-[85px] py-[10px] md:py-[14px] relative -mt-1 -mr-1 inline-block leading-6 transition-all duration-300 ease-in-out hover:bg-mainColor">
+                  <span className="relative text-textLight dark:text-tWhite transition-colors duration-300 ease-in-out hover:text-tWhite">
                     SEND MESSAGE
                   </span>
-                  <span className="rounded-full text-tWhite bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute">
+                  <span className="rounded-full text-tWhite bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[135px] md:ml-[164px] absolute transition-colors duration-300 ease-in-out">
                     <FontAwesomeIcon
                       icon={faPaperPlane}
-                      style={{ width: "46px", height: "28px" }}
+                      className="transition-transform duration-300 ease-in-out hover:scale-110 w-[32px] h-[20px] md:w-[46px] md:h-[28px]"
                     />
                   </span>
                 </button>

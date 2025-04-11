@@ -13,5 +13,14 @@ export const Provider: React.FC<ProviderPropsInterface> = ({ children }) => {
 
   if (!mounted) return <>{children}</>;
 
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
+  return (
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="light"
+      enableSystem={true}
+      disableTransitionOnChange
+    >
+      {children}
+    </ThemeProvider>
+  );
 };

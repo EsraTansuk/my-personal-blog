@@ -7,8 +7,7 @@ import {
 } from "@/providers";
 import "../../styles/global.css";
 import { Provider } from "./Provider";
-import { ThemeSwitcher } from "./ThemeSwitcher";
-import LanguageSwitcher from "./LanguageSwitcher";
+import { SwitchersWrapper } from "./components/switchers/SwitchersWrapper";
 
 export default function RootLayout({
   children,
@@ -23,9 +22,8 @@ export default function RootLayout({
             <AppInitializeProvider>
               <I18nProvider>
                 <Provider>
-                  <main className="flex min-h-screen flex-col items-center justify-between  border-black text-2xl text-black">
-                    <ThemeSwitcher />
-                    <LanguageSwitcher />
+                  <main className="flex min-h-screen flex-col items-center justify-between border-black text-2xl text-black">
+                    <SwitchersWrapper />
                     {children}
                   </main>
                 </Provider>

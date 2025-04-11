@@ -60,7 +60,7 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
         }}
       />
       <div className="text-center mt-3 sm:mt-4 md:mt-5">
-        <h4 className="text-sm sm:text-base md:text-lg">{text}</h4>
+        <h4 className="text-sm sm:text-base md:text-lg dark:text-tWhite">{text}</h4>
       </div>
     </>
   );

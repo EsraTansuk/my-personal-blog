@@ -47,7 +47,7 @@ export const HomeSection = () => {
                 <span className="rounded-full bg-mainColor w-11 h-11 md:w-[56px] md:h-[56px] flex justify-center items-center -mt-[34px] md:-mt-[42px] ml-[141px] md:ml-[162px] absolute right-0">
                   <FontAwesomeIcon
                     icon={faRightLong}
-                    style={{ width: "50px", height: "30px" }}
+                    className="transition-transform duration-300 ease-in-out hover:scale-110 w-[35px] h-[22px] md:w-[50px] md:h-[30px]"
                   />
                 </span>
               </button>

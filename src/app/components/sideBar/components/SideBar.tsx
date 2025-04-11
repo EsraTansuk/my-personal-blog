@@ -2,6 +2,7 @@
 
 // React Imports
 import React from "react";
+import { usePathname } from "next/navigation";
 
 // Package Imports
 import {
@@ -49,8 +50,10 @@ const pages: Pages[] = [
 ];
 
 export const SideBar = () => {
+  const pathname = usePathname();
+
   return (
-    <ul className="text-xl sm:text-2xl lg:text-3xl w-full text-textLight dark:text-tWhite flex flex-row border-x-fuchsia-50 border-t-2 dark:border-t-0 gap-[1%] sm:gap-[1.5%] lg:gap-[2%] shadow-shadowColor shadow-2xl lg:shadow-none lg:flex-col lg:w-20 lg:justify-center px-2 sm:px-3 lg:px-0 lg:ms-6 lg:me-0 bottom-0 bg-tWhite dark:bg-greyBg lg:dark:bg-transparent justify-around lg:h-full fixed right-0 z-50">
+    <ul className="text-xl sm:text-2xl lg:text-3xl w-full text-textLight dark:text-tWhite flex flex-row gap-2 sm:gap-3 lg:gap-6 shadow-[0_-2px_10px_rgba(0,0,0,0.1)] dark:shadow-[0_-2px_10px_rgba(0,0,0,0.25)] lg:shadow-[2px_0_10px_rgba(0,0,0,0.1)] dark:lg:shadow-[2px_0_10px_rgba(0,0,0,0.25)] lg:flex-col lg:w-20 lg:justify-center px-2 sm:px-3 lg:px-0 lg:ms-6 lg:me-0 bottom-0 bg-tWhite dark:bg-greyBg lg:dark:bg-transparent justify-around lg:h-full fixed right-0 z-50 py-2 sm:py-3 lg:py-4">
       {pages?.map(({ title, icon, url }, index) => (
         <SideBarItem
           title={title.toUpperCase()}
@@ -58,6 +61,7 @@ export const SideBar = () => {
           icon={icon}
           url={url}
           index={index}
+          isActive={pathname === url}
           setSelectedTab={() => {}}
         />
       ))}
