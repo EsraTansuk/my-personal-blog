@@ -41,8 +41,18 @@
   "CONTACT.SEND.MESSAGE": "SEND MESSAGE",
   "BLOG.POSTS": "POSTS",
   "BLOG.MY.BLOG": "MY",
-  "BLOG.BLOG": "BLOG"
+  "BLOG.BLOG": "BLOG",
 
-
-
+  "MONTH.JANUARY": "Jan",
+  "MONTH.FEBRUARY": "Feb",
+  "MONTH.MARCH": "Mar",
+  "MONTH.APRIL": "Apr",
+  "MONTH.MAY": "May",
+  "MONTH.JUNE": "Jun",
+  "MONTH.JULY": "Jul",
+  "MONTH.AUGUST": "Aug",
+  "MONTH.SEPTEMBER": "Sep",
+  "MONTH.OCTOBER": "Oct",
+  "MONTH.NOVEMBER": "Nov",
+  "MONTH.DECEMBER": "Dec"
 }

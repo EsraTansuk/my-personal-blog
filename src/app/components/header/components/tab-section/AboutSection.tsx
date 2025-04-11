@@ -27,7 +27,15 @@ export const AboutSection = () => {
   return (
     <div className="flex flex-col items-center w-full pb-7 overflow-y-auto force-overflow large-2">
       <div className="w-full lg:max-w-7xl">
-        <Title titleOne={translator("ABOUT.ABOUT")} titleTwo={currentLanguage?.name === "en-US" ? translator("ABOUT.ME") : undefined} titleBackground={translator("ABOUT.RESUME")} />
+        <Title
+          titleOne={translator("ABOUT.ABOUT")}
+          titleTwo={
+            currentLanguage?.name === "en-US"
+              ? translator("ABOUT.ME")
+              : undefined
+          }
+          titleBackground={translator("ABOUT.RESUME")}
+        />
         <div className="w-full mx-auto md:max-w-7xl flex flex-col xl:flex-row gap-12">
           <div className="flex flex-col items-start px-4 w-full xl:w-1/2 xl:mx-0">
             <h1 className=" text-2xl md:text-3xl font-semibold mb-6 pb-1 border-b-2 border-mainColor text-textLight dark:text-tWhite">
@@ -36,35 +44,36 @@ export const AboutSection = () => {
             <div className="w-full">
               <ul className="text-base flex flex-wrap text-textLight dark:text-tWhite">
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70 ">{translator("ABOUT.FULLNAME")} :</span>
+                  <span className="opacity-70 ">
+                    {translator("ABOUT.FULLNAME")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     Esra Tansuk
                   </span>
                 </li>
-             
-                <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.AGE")} :</span>
-                  <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
-                    {" "}
-                    29
-                  </span>
-                </li>
+
                 <li className="md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.NATIONALITY")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.NATIONALITY")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
-                    {translator("ABOUT.TURKEY")} 
+                    {translator("ABOUT.TURKEY")}
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.FREELANCE")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.FREELANCE")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     {translator("ABOUT.AVAILABLE")}
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.ADDRESS")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.ADDRESS")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     Ankara, {translator("ABOUT.TURKEY")}
@@ -78,14 +87,18 @@ export const AboutSection = () => {
                   </span>
                 </li> */}
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.EMAIL")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.EMAIL")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     esra.tansuk@gmail.com
                   </span>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.GITHUB.PROFILE")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.GITHUB.PROFILE")} :
+                  </span>
                   <Link
                     href="https://github.com/EsraTansuk"
                     target="_blank"
@@ -96,7 +109,9 @@ export const AboutSection = () => {
                   </Link>
                 </li>
                 <li className="pb-1 md:pb-5 w-full md:w-2/4">
-                  <span className="opacity-70">{translator("ABOUT.LANGUAGES")} :</span>
+                  <span className="opacity-70">
+                    {translator("ABOUT.LANGUAGES")} :
+                  </span>
                   <span className=" font-semibold md:block md:ps-0 lg:inline-block lg:ps-2">
                     {" "}
                     {translator("ABOUT.ENGLISH")}, {translator("ABOUT.GERMAN")}
@@ -108,8 +123,8 @@ export const AboutSection = () => {
           <div className=" items-center lg:items-start w-full lg:w-9/12 xl:w-1/2 flex flex-col px-4 text-textLight dark:text-tWhite">
             <div className="w-full gap-2 md:gap-10 flex flex-row ">
               <div className=" w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-4 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
-                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-6">
-                  1
+                <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
+                  3
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
@@ -120,7 +135,7 @@ export const AboutSection = () => {
               </div>
               <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
-                  4
+                  8
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
@@ -133,7 +148,7 @@ export const AboutSection = () => {
             <div className="w-full gap-2 md:gap-10 flex flex-row ">
               <div className="w-1/2 mb-8 pt-5 pe-12 md:pe-16 pb-6 ps-3 md:ps-12 border divide-solid dark:border-borderColor rounded-md ">
                 <h3 className="text-mainColor font-semibold text-5xl md:text-6xl relative w-10">
-                  2
+                  4
                   <span className="text-mainColor after:content-['_+'] -right-7 absolute text-4xl "></span>
                 </h3>
 
@@ -160,7 +175,7 @@ export const AboutSection = () => {
           <div className=" text-center">
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-2xl md:text-3xl font-semibold my-10">
-            {translator("ABOUT.MY.SKILLS")}
+              {translator("ABOUT.MY.SKILLS")}
             </h2>
           </div>
           <div className="w-full flex flex-col gap-12 mx-auto">
@@ -482,7 +497,7 @@ export const AboutSection = () => {
           <div>
             <div className="border-t-2 border-borderColor w-6/12 flex mx-auto"></div>
             <h2 className="text-2xl md:text-3xl font-semibold text-center text-textLight dark:text-tWhite my-10">
-            {translator("ABOUT.EXPERIENCE.&.EDUCATION")}
+              {translator("ABOUT.EXPERIENCE.&.EDUCATION")}
             </h2>
           </div>
           <div className="w-full flex flex-col lg:flex-row">
@@ -496,8 +511,36 @@ export const AboutSection = () => {
                         className=" my-3 text-lGray text-2xl"
                       />
                     </div>
+                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
+                      {`${translator("MONTH.APRIL")} 2024 - ${translator(
+                        "ABOUT.PRESENT"
+                      )}`}
+                    </span>
+                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
+                      FRONTEND DEVELOPER
+                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
+                        {" "}
+                        PROTECTREMOTE.COM
+                      </span>
+                    </h5>
+                    <p className="text-textLight dark:text-lGray text-sm m-0">
+                      I am working as a Frontend Developer at ProtectRemote.com,
+                      helping the company to build their website and their
+                      products.
+                    </p>
+                  </li>
+
+                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
+                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
+                      <FontAwesomeIcon
+                        icon={faBriefcase}
+                        className=" my-3 text-lGray text-2xl"
+                      />
+                    </div>
                     <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2023 - {translator("ABOUT.PRESENT")}
+                      {`${translator("MONTH.FEBRUARY")} 2023 - ${translator(
+                        "MONTH.DECEMBER"
+                      )} 2023`}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
                       Frontend Developer Intern
@@ -510,55 +553,10 @@ export const AboutSection = () => {
                       I am working as a Frontend Developer Intern at Pointo.
                     </p>
                   </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className="text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
                 </ul>
               </div>
             </div>
+
             <div className=" lg:w-2/4 w-full px-4">
               <div className=" box-border">
                 <ul className=" list-none m-0 p-0 block">
@@ -570,64 +568,32 @@ export const AboutSection = () => {
                       />
                     </div>
                     <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
+                      {`${translator("MONTH.DECEMBER")} 2023 - ${translator(
+                        "MONTH.APRIL"
+                      )} 2024`}
                     </span>
                     <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
+                      FRONTEND DEVELOPER
                       <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
                         {" "}
-                        ENVATO
+                        ÜRÜNVER MÜHENDİSLİK -{" "}
+                        <Link
+                          href="https://difolaunchpad.com/"
+                          target="_blank"
+                          className=" hover:underline"
+                        >
+                          https://difolaunchpad.com/
+                        </Link>
                       </span>
                     </h5>
                     <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
-                    </p>
-                  </li>
-
-                  <li className="relative py-0 pr-5 pl-16 mx-0 mt-0 mb-12">
-                    <div className=" w-11 h-11 absolute left-0 right-0 leading-10 text-center rounded-full bg-mainColor">
-                      <FontAwesomeIcon
-                        icon={faBriefcase}
-                        className=" my-3 text-lGray text-2xl"
-                      />
-                    </div>
-                    <span className=" text-textLight dark:text-lGray text-xs py-1 px-3 mb-3 rounded-[20px] font-semibold bg-lGray dark:bg-borderColor opacity-80">
-                      2018 - {translator("ABOUT.PRESENT")}
-                    </span>
-                    <h5 className=" text-lg mt-2 mx-0 mb-3 font-medium">
-                      WEB DEVELOPER{" "}
-                      <span className="before:content-['-'] opacity-80 relative pl-4 text-[15px]">
-                        {" "}
-                        ENVATO
-                      </span>
-                    </h5>
-                    <p className="text-textLight dark:text-lGray text-sm m-0">
-                      Lorem ipsum dolor sit amet, consectetur tempor incididunt
-                      ut labore adipisicing elit
+                      I worked as a Frontend Developer at Ürünver Mühendislik
+                      where I built difolaunchpad.com using Next.js. My
+                      responsibilities included implementing responsive UI
+                      components, integrating APIs, and ensuring cross-browser
+                      compatibility. I collaborated with the design and backend
+                      teams to deliver a seamless user experience while
+                      maintaining code quality and performance standards.
                     </p>
                   </li>
                 </ul>
