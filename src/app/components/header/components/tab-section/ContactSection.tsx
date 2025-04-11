@@ -25,38 +25,46 @@ export const ContactSection = () => {
             <h3 className="text-2xl md:text-3xl pb-4 font-medium">
               DON'T BE SHY!
             </h3>
-            <p className=" mb-6 text-sm md:text-base">
+            <p className="mb-6 text-sm md:text-base">
               Feel free to get in touch with me. I am always open to discussing
               new projects, creative ideas or opportunities to be part of your
               visions.
             </p>
-            <p className=" font-medium leading-7 pt-1 mb-5 text-sm md:text-base pl-16 relative">
-              <FontAwesomeIcon
-                icon={faMapMarkerAlt}
-                className="mr-4 left-0 top-2 text-4xl md:text-5xl text-mainColor absolute pl-2"
-              />
-              <span className=" font-normal opacity-50 pb-0 text-base md:text-lg block text-textLight dark:text-amber-50">
-                ADDRESS POINT
-              </span>
-              Yenimahalle/ Ankara
-            </p>
-            <p className=" font-medium leading-7 pt-1 mb-5 text-sm md:text-base pl-16 relative">
-              <FontAwesomeIcon
-                icon={faEnvelopeOpen}
-                className="mr-4 left-0 top-2 text-4xl md:text- text-mainColor absolute"
-              />
-              <span className=" font-normal opacity-50 pb-0 text-base md:text-lg block text-textLight dark:text-amber-50">
-                MAIL ME
-              </span>
-              <a href="mailto:esra.tansuk@gmail.com">esra.tansuk@gmail.com</a>
-            </p>
+            <div className="flex flex-col gap-6">
+              <div className="flex items-start gap-4">
+                <div className="text-4xl md:text-5xl text-mainColor">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-normal opacity-50 text-base md:text-lg text-textLight dark:text-amber-50">
+                    ADDRESS POINT
+                  </span>
+                  <span className="font-medium text-sm md:text-base">
+                    Yenimahalle/ Ankara
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="text-4xl md:text-4xl text-mainColor">
+                  <FontAwesomeIcon icon={faEnvelopeOpen} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-normal opacity-50 text-base md:text-lg text-textLight dark:text-amber-50">
+                    MAIL ME
+                  </span>
+                  <a href="mailto:esra.tansuk@gmail.com" className="font-medium text-sm md:text-base">
+                    esra.tansuk@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
             
-            <ul className="flex flex-row gap-4 text-xl pt-4 -ml-1">
+            <ul className="flex flex-row gap-4 text-xl pt-8 -ml-1">
               <li className=" inline-block ">
                 <Link
                   href="https://www.facebook.com/esra.blks/"
                   target="_blank"
-                  className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
+                  className=" inline-block h-11 w-11 pt-2 text-center text-textLight hover:text-white dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                 >
                   <FontAwesomeIcon icon={faFacebookF} />
                 </Link>
@@ -65,7 +73,7 @@ export const ContactSection = () => {
                 <Link
                   href="https://twitter.com/EsraTansuk"
                   target="_blank"
-                  className=" inline-block h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
+                  className=" inline-block h-11 w-11 pt-2 text-center text-textLight hover:text-white dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                 >
                   <FontAwesomeIcon icon={faTwitter} />
                 </Link>
@@ -74,7 +82,7 @@ export const ContactSection = () => {
                 <Link
                   href="https://www.instagram.com/esra.she/"
                   target="_blank"
-                  className=" inline-block  h-11 w-11 pt-2 text-center text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
+                  className=" inline-block  h-11 w-11 pt-2 text-center text-textLight hover:text-white dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                 >
                   <FontAwesomeIcon icon={faInstagram} />
                 </Link>
@@ -83,7 +91,7 @@ export const ContactSection = () => {
                 <Link
                   href="https://www.linkedin.com/in/esra-tansuk-9313a6211/"
                   target="_blank"
-                  className=" inline-block h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
+                  className=" inline-block h-11 w-11 pt-2 text-center  text-textLight hover:text-white dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </Link>
@@ -92,7 +100,7 @@ export const ContactSection = () => {
                 <Link
                   href="https://github.com/EsraTansuk"
                   target="_blank"
-                  className=" inline-block  h-11 w-11 pt-2 text-center  text-textLight dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
+                  className=" inline-block  h-11 w-11 pt-2 text-center  text-textLight hover:text-white dark:text-white text-2xl my-0 bg-lGray  dark:bg-iconBgColor rounded-full hover:bg-mainColor"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
