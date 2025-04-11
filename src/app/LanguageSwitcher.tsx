@@ -23,13 +23,14 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="right-3 pt-24 z-[99] absolute ">
-      <button onClick={changeLanguage} className="pt-1 " type="button">
+    <div className="right-2 sm:right-3 pt-16 sm:pt-20 lg:pt-24 z-[99] absolute">
+      <button onClick={changeLanguage} className="pt-0.5 sm:pt-1" type="button">
         <Image
           src={currentLanguage?.name === "en-US" ? enFlag : trFlag}
           alt="Language Flag"
-          width={56}
-          height={56}
+          width={32}
+          height={32}
+          className="w-8 h-8 sm:w-10 sm:h-10 lg:w-14 lg:h-14"
         />
       </button>
     </div>

@@ -17,13 +17,13 @@ export const PortfolioSection = () => {
       <div className="w-full lg:max-w-7xl">
         <Title
           titleOne={translator("PORTFOLIO.MY.PORTFOLIO")}
-
           titleTwo={
             currentLanguage?.name === "en-US"
               ? translator("PORTFOLIO.PORTFOLIO")
               : undefined
           }
           titleBackground={translator("PORTFOLIO.WORKS")}
+          isLongText={currentLanguage?.name === "tr-TR"}
         />
 
         <div className="w-full mb-20 lg:mb-12">

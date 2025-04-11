@@ -31,11 +31,9 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
       <CircularProgressbarWithChildren
         value={percentage}
         text={`${percentage}%`}
-        className={className}
+        className={`w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px] text-xs sm:text-sm md:text-base ${className}`}
         styles={{
           root: {
-            width: 140,
-            height: 140,
             margin: "auto",
             position: "relative",
           },
@@ -55,14 +53,14 @@ export const Progressbar: React.FC<ProgressbarProps> = ({
           },
           text: {
             fill: theme == "dark" ? textColor : "#666",
-            fontSize: "16px",
+            fontSize: "inherit",
             textAnchor: "middle",
             alignmentBaseline: "middle",
           },
         }}
       />
-      <div className="text-lg text-center mt-5">
-        <h4>{text}</h4>
+      <div className="text-center mt-3 sm:mt-4 md:mt-5">
+        <h4 className="text-sm sm:text-base md:text-lg">{text}</h4>
       </div>
     </>
   );
