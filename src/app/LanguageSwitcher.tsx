@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
       onClick={changeLanguage}
       className="cursor-pointer font-semibold text-sm sm:text-base lg:text-lg select-none"
     >
-      {currentLanguage.name === "en-US" ? "US" : "TR"}
+      {currentLanguage?.name === "en-US" ? "US" : "TR"}
     </span>
   );
 };
