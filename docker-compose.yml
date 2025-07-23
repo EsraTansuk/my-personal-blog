@@ -9,6 +9,11 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
+    networks:
+      - compose-network
     dns:
       - 8.8.8.8
 
+networks:
+  compose-network:
+    external: true
