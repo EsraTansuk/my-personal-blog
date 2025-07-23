@@ -11,6 +11,8 @@ services:
     restart: always
     networks:
       - compose-network
+    dns:
+      - 8.8.8.8
 
 networks:
   compose-network:
