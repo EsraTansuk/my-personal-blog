@@ -9,4 +9,6 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
+    dns:
+      - 8.8.8.8
 
