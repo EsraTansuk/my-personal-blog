@@ -10,14 +10,14 @@ const LanguageSwitcher = () => {
 
   const changeLanguage = () => {
     const newLanguage: LanguageModel =
-      currentLanguage.name === "en-US"
+      currentLanguage?.name === "en-US"
         ? { name: "tr-TR", flag: "" }
         : { name: "en-US", flag: "" };
     dispatch(setLanguageAction(newLanguage));
   };
 
   return (
-    <span 
+    <span
       onClick={changeLanguage}
       className="cursor-pointer font-semibold text-sm sm:text-base lg:text-lg select-none"
     >
